@@ -1,0 +1,279 @@
+.cont {
+    height: 800px;
+    background-image: url('../img/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.nav {
+    justify-content: center;
+    padding-top: 49px;
+}
+
+.content {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.30) 80.73%);
+    height: 800px;
+}
+
+.nav1 {
+    margin-top: -15px;
+}
+
+.upper-content {
+    height: 3200px;
+    background-color: black;
+}
+
+.nav2 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    margin-right: 200px;
+
+    margin-left: 300px;
+}
+
+.title_sect {
+
+    color: white;
+
+    text-align: center;
+    font-family: Turret Road;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    justify-content: center;
+    margin-bottom: 177px;
+
+
+}
+
+.sects {
+    margin-top: 30px;
+
+}
+
+.sec {
+    margin-bottom: 177px;
+    margin-left: 287;
+    height: auto;
+
+}
+
+.nav-item {
+    color: #FFF;
+    font-family: Turret Road;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.nav3 {
+    float: right;
+    margin-top: -8px;
+}
+
+.button-item button:hover {
+    transform: rotate(360deg);
+
+    transition: 0.9s;
+}
+
+.button-item button {
+    border-radius: 5px;
+    background: #9056AE;
+    box-shadow: 0px 15px 40px 0px rgba(255, 255, 255, 0.25);
+    border-color: transparent;
+    width: 117px;
+    height: 45px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-shadow: 0px 4px 18px 0px #FFF;
+    font-family: Turret Road;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.sec-button {
+    width: 160px;
+}
+
+.sec-button .button-item button {
+    margin-left: 300px;
+    margin-top: 50px;
+    width: 160px;
+}
+
+div .topic {
+    margin-top: 246px;
+    margin-left: 300px;
+}
+
+.topic {
+    color: #FFF;
+    font-family: Turret Road;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    width: 851px;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.dropcont {
+
+    margin-top: 16px;
+    padding-top: 27px;
+    display: none;
+    position: absolute;
+    background-color: rgba(88, 121, 188, 0.3);
+    width: 170px;
+    border-radius: 10px;
+
+}
+
+.dropdown.active .dropcont {
+    display: block;
+}
+
+.dropdown.active .nav-item svg,
+.dropdown2.active .btndrop2 svg,
+.dropdown:hover>.nav-item svg {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.dropdown:hover>.dropcont {
+    display: block;
+}
+
+.dropdown .nav-item svg,
+.dropdown2 .btndrop2 svg {
+
+    transition: 0.5s;
+}
+
+.dropdown.active .nav-item svg path,
+.dropdown2.active .btndrop2 svg path {
+    fill-opacity: 1;
+    transition: 0.5s;
+}
+
+.nav-item:hover {
+    margin-top: 2px;
+    transition: 0.3s;
+}
+
+.dropcont .dropflech {
+    position: absolute;
+    top: -9px;
+    right: 0;
+    bottom: 0;
+    left: 119px;
+}
+
+.btndrop2 {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.nav-cont li,
+.btndrop2 {
+    position: relative;
+    color: #FFF;
+    font-family: Turret Road;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.dropdown2.active .dropcont2 {
+    transition: .7s;
+    display: block;
+}
+
+.dropcont2 {
+    display: none;
+}
+
+.p1 {
+    color: #FFF;
+    font-family: Turret Road;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.p2 {
+    color: #FFF;
+    font-family: Turret Road;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.sec .animate {
+    transition: 1s;
+    filter: blur(2px);
+}
+
+.sec1 .animate {
+    transform: translateX(-100%);
+}
+
+.sec1.show-animate .animate,
+.sec2.show-animate .animate {
+    transform: translateX(0);
+}
+
+.sec2 .animate {
+    transform: translateX(100%);
+}
+
+.sec3 .animate {
+    transform: scale(.7);
+
+}
+
+.sec3.show-animate .animate {
+    transform: scale(1);
+}
+
+.sec.show-animate .animate {
+    filter: blur(0);
+}
+
+
+.sponsorbar .row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.sponsorbar {
+    background: #2F394D;
+    height: 192px;
+}
