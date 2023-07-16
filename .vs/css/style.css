@@ -6,26 +6,46 @@
     overflow: hidden;
 
 }
-
-.nav {
-    justify-content: center;
-    padding-top: 49px;
+.upper-content {
+    height: 5300px;
+    background: #000013;
 }
-
 .content {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.30) 80.73%);
     height: 800px;
 }
+/* Button css */
+.button-item button:hover {
 
+    background: #FFF;
+    color: #9056AE;
+    transition: 0.3s;
+}
+
+
+.button-item button {
+    border-radius: 5px;
+    background: #9056AE;
+    border-color: transparent;
+    width: 117px;
+    height: 45px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-shadow: 0px 4px 18px 0px #FFF;
+    font-family: Turret Road;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+/* Navbar css */
+.nav {
+    justify-content: center;
+    padding-top: 49px;
+}
 .nav1 {
     margin-top: -15px;
 }
-
-.upper-content {
-    height: 3200px;
-    background-color: black;
-}
-
 .nav2 {
     display: inline-flex;
     align-items: flex-start;
@@ -35,7 +55,44 @@
 
     margin-left: 300px;
 }
+.nav {
+    align-items: center;
+}
+.nav-item {
+    color: rgba(255, 255, 255, 0.50);
 
+    font-family: Turret Road;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+.trans-btn {
+    border-radius: 5px;
+    background: transparent;
+    border-color: transparent;
+    width: 117px;
+    height: 45px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-shadow: 0px 4px 18px 0px #FFF;
+    font-family: Turret Road;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border-color: white;
+    margin-right: 15px;
+}
+
+.trans-btn:hover {
+    background-color: white;
+    color: #9056AE;
+    transition: 0.3s;
+    border-color: transparent;
+}
+/*Sections */
 .title_sect {
 
     color: white;
@@ -54,9 +111,7 @@
 
 .sects {
     margin-top: 30px;
-
 }
-
 .sec {
     margin-bottom: 177px;
     margin-left: 287;
@@ -64,43 +119,6 @@
 
 }
 
-.nav-item {
-    color: #FFF;
-    font-family: Turret Road;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration: none;
-}
-
-.nav3 {
-    float: right;
-    margin-top: -8px;
-}
-
-.button-item button:hover {
-    transform: rotate(360deg);
-
-    transition: 0.9s;
-}
-
-.button-item button {
-    border-radius: 5px;
-    background: #9056AE;
-    box-shadow: 0px 15px 40px 0px rgba(255, 255, 255, 0.25);
-    border-color: transparent;
-    width: 117px;
-    height: 45px;
-    flex-shrink: 0;
-    color: #FFF;
-    text-shadow: 0px 4px 18px 0px #FFF;
-    font-family: Turret Road;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-}
 
 .sec-button {
     width: 160px;
@@ -113,7 +131,7 @@
 }
 
 div .topic {
-    margin-top: 246px;
+    margin-top: 146px;
     margin-left: 300px;
 }
 
@@ -170,7 +188,8 @@ div .topic {
 }
 
 .nav-item:hover {
-    margin-top: 2px;
+
+    color: white;
     transition: 0.3s;
 }
 
@@ -211,21 +230,25 @@ div .topic {
 }
 
 .p1 {
-    color: #FFF;
+    color: #5879BC;
     font-family: Turret Road;
-    font-size: 64px;
+    font-size: 40px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: normal;
 
+}
+
+.animate .p1 {
+    margin-top: 50px;
 }
 
 .p2 {
     color: #FFF;
     font-family: Turret Road;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 700;
     line-height: normal;
 
 }
@@ -243,8 +266,13 @@ body {
     transform: translateX(-100%);
 }
 
+.sec3 .animate {
+    transform: translateX(-100%);
+}
+
 .sec1.show-animate .animate,
-.sec2.show-animate .animate {
+.sec2.show-animate .animate,
+.sec3.show-animate .animate {
     transform: translateX(0);
 }
 
@@ -252,28 +280,281 @@ body {
     transform: translateX(100%);
 }
 
-.sec3 .animate {
-    transform: scale(.7);
 
-}
-
-.sec3.show-animate .animate {
-    transform: scale(1);
-}
 
 .sec.show-animate .animate {
     filter: blur(0);
 }
 
+.sponsorbar {
+    margin-bottom: 170px;
+}
 
 .sponsorbar .row .col {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
 }
 
-.sponsorbar {
-    background: #2F394D;
-    height: 192px;
+.sponsorbar .row {
+    background: rgba(47, 57, 77, 0.35);
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.sponsorbar .row {
+    overflow: hidden;
+}
+
+.sponsor .row {
+    animation: moveBar 9s linear infinite;
+    background-color: transparent;
+}
+
+
+
+@keyframes moveBar {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    26% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    76% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.tes {
+    width: 165px;
+    height: 142px;
+    border-radius: 10px;
+    background: rgba(47, 57, 77, 0.80);
+    margin-right: 20px;
+    margin-bottom: 29px;
+
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.84);
+    text-align: center;
+    font-family: Turret Road;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 31px;
+    margin-bottom: 29px;
+}
+
+.speech {
+    color: rgba(255, 255, 255, 0.84);
+    font-family: Turret Road;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 30px;
+    width: 582px;
+}
+
+.says {
+    color: rgba(255, 255, 255, 0.84);
+    text-align: center;
+    font-family: Turret Road;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+
+}
+
+.txt {
+    margin-right: 84px;
+}
+
+.txt div {
+    float: left;
+}
+
+
+.splits {
+    margin-bottom: 174px;
+}
+
+.contact {
+    height: 760px;
+    background: #563865;
+}
+
+.contact div {
+    display: flex;
+
+}
+
+.contact .title {
+    margin-bottom: 41px;
+    margin-top: 233px;
+    width: 700px;
+    text-align: center;
+}
+
+.speeech {
+    color: #FFF;
+    text-align: center;
+    font-family: Turret Road;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 654px;
+    height: 76px;
+    flex-shrink: 0;
+    margin-bottom: 75px;
+}
+
+.st {
+    position: absolute;
+}
+
+.st1 {
+    right: -10px;
+    top: 3800px;
+}
+
+.st2 {
+    right: 70px;
+    top: 4036px;
+}
+
+.st3 {
+    right: -95px;
+    top: 4130px;
+}
+
+.st4 {
+    left: -73px;
+    top: 3900px;
+    ;
+}
+
+.st5 {
+    left: 8px;
+    top: 4134px;
+    ;
+}
+
+.tit {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Turret Road;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 61px;
+}
+
+.footer .row {
+    margin-bottom: 81px;
+}
+
+.cmp a {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Turret Road;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.cmp a:hover {
+    color: #b99bc9;
+    transition: 0.3s;
+}
+
+.cmp {
+    margin-bottom: 10px;
+}
+
+.infos .col {
+    margin-right: 75px;
+}
+
+.ft {
+    color: #9A9A9A;
+    font-family: Turret Road;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sd {
+    color: #9A9A9A;
+    font-family: Turret Road;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.siv {
+    text-align: center;
+}
+
+.last_words {
+    height: 89px;
+    border-radius: 10px;
+    background: rgba(47, 57, 77, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cmps svg {
+    margin-right: 30px;
+}
+
+.cmps svg:hover>path {
+    fill: #b99bc9;
+    transition: 0.3s;
 }

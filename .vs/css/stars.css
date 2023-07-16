@@ -182,7 +182,7 @@
     696px 1654px #fff, 1144px 60px #fff;
 }
 
-#stars:after {
+#starsz:after {
     content: '';
     position: absolute;
     top: 2000px;
@@ -426,7 +426,7 @@
     986px 1529px #fff, 1667px 1137px #fff;
 }
 
-#stars2:after {
+#stars2z:after {
     content: '';
     position: absolute;
     top: 2000px;
@@ -519,7 +519,7 @@
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
 
-#stars3:after {
+#stars3z:after {
     content: '';
     position: absolute;
     top: 2000px;
