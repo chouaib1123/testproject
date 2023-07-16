@@ -1,4 +1,4 @@
-.cont {
+.First_vue {
     height: 800px;
     background-image: url('../img/1.png');
     background-repeat: no-repeat;
@@ -6,22 +6,33 @@
     overflow: hidden;
 
 }
-.upper-content {
+
+.Main {
     height: 5300px;
     background: #000013;
 }
-.content {
+
+.First_vue-content {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.30) 80.73%);
     height: 800px;
+    position: absolute;
+    width: 100%;
 }
-/* Button css */
+
+.splits {
+    margin-bottom: 174px;
+}
+
+
+
+
+/* Buttons css */
 .button-item button:hover {
 
     background: #FFF;
     color: #9056AE;
     transition: 0.3s;
 }
-
 
 .button-item button {
     border-radius: 5px;
@@ -38,14 +49,20 @@
     font-weight: 800;
     line-height: normal;
 }
+
+
+
+
 /* Navbar css */
 .nav {
     justify-content: center;
     padding-top: 49px;
 }
+
 .nav1 {
     margin-top: -15px;
 }
+
 .nav2 {
     display: inline-flex;
     align-items: flex-start;
@@ -55,9 +72,11 @@
 
     margin-left: 300px;
 }
+
 .nav {
     align-items: center;
 }
+
 .nav-item {
     color: rgba(255, 255, 255, 0.50);
 
@@ -68,6 +87,7 @@
     line-height: normal;
     text-decoration: none;
 }
+
 .trans-btn {
     border-radius: 5px;
     background: transparent;
@@ -91,61 +111,6 @@
     color: #9056AE;
     transition: 0.3s;
     border-color: transparent;
-}
-/*Sections */
-.title_sect {
-
-    color: white;
-
-    text-align: center;
-    font-family: Turret Road;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    justify-content: center;
-    margin-bottom: 177px;
-
-
-}
-
-.sects {
-    margin-top: 30px;
-}
-.sec {
-    margin-bottom: 177px;
-    margin-left: 287;
-    height: auto;
-
-}
-
-
-.sec-button {
-    width: 160px;
-}
-
-.sec-button .button-item button {
-    margin-left: 300px;
-    margin-top: 50px;
-    width: 160px;
-}
-
-div .topic {
-    margin-top: 146px;
-    margin-left: 300px;
-}
-
-.topic {
-    color: #FFF;
-    font-family: Turret Road;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    display: flex;
-    width: 851px;
-    flex-direction: column;
-    flex-shrink: 0;
 }
 
 .dropcont {
@@ -229,6 +194,43 @@ div .topic {
     display: none;
 }
 
+
+
+
+/*Animation Sections */
+.title_sect {
+    color: white;
+    text-align: center;
+    font-family: Turret Road;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    justify-content: center;
+    margin-bottom: 177px;
+}
+
+.sects {
+    margin-top: 30px;
+}
+
+.sec {
+    margin-bottom: 177px;
+    margin-left: 287;
+    height: auto;
+
+}
+
+.sec-button {
+    width: 160px;
+}
+
+.sec-button .button-item button {
+    margin-left: 300px;
+    margin-top: 50px;
+    width: 160px;
+}
+
 .p1 {
     color: #5879BC;
     font-family: Turret Road;
@@ -236,7 +238,6 @@ div .topic {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
 }
 
 .animate .p1 {
@@ -286,6 +287,44 @@ body {
     filter: blur(0);
 }
 
+.st11 {
+    right: -40px;
+}
+
+.st22 {
+
+    left: -50px;
+    margin-top: 1000px;
+}
+
+.st33 {
+    margin-top: 1500px;
+    right: -40px;
+}
+
+/* Topic after navbar */
+div .topic {
+    margin-top: 146px;
+    margin-left: 300px;
+}
+
+.topic {
+    color: #FFF;
+    font-family: Turret Road;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    width: 851px;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+
+
+/* sponsor bar*/
 .sponsorbar {
     margin-bottom: 170px;
 }
@@ -311,7 +350,7 @@ body {
 }
 
 .sponsor .row {
-    animation: moveBar 9s linear infinite;
+    animation: moveBar 12s linear infinite;
     background-color: transparent;
 }
 
@@ -354,7 +393,8 @@ body {
     }
 }
 
-.tes {
+/*reasons section*/
+.reasons {
     width: 165px;
     height: 142px;
     border-radius: 10px;
@@ -364,7 +404,7 @@ body {
 
 }
 
-.title {
+.res-title {
     color: rgba(255, 255, 255, 0.84);
     text-align: center;
     font-family: Turret Road;
@@ -376,7 +416,7 @@ body {
     margin-bottom: 29px;
 }
 
-.speech {
+.res-text {
     color: rgba(255, 255, 255, 0.84);
     font-family: Turret Road;
     font-size: 24px;
@@ -387,7 +427,7 @@ body {
     width: 582px;
 }
 
-.says {
+.reason-logo-title {
     color: rgba(255, 255, 255, 0.84);
     text-align: center;
     font-family: Turret Road;
@@ -398,7 +438,7 @@ body {
 
 }
 
-.lg {
+.reason-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -406,22 +446,24 @@ body {
 
 }
 
-.txt {
+.reason-speech {
     margin-right: 84px;
 }
 
-.txt div {
+.reason-speech div {
     float: left;
 }
 
 
-.splits {
-    margin-bottom: 174px;
-}
 
+/*contacts*/
 .contact {
     height: 760px;
     background: #563865;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .contact div {
@@ -429,14 +471,21 @@ body {
 
 }
 
-.contact .title {
+.contact-title {
     margin-bottom: 41px;
     margin-top: 233px;
     width: 700px;
     text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Turret Road;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
 
-.speeech {
+.contact-speech {
     color: #FFF;
     text-align: center;
     font-family: Turret Road;
@@ -456,32 +505,32 @@ body {
 
 .st1 {
     right: -10px;
-    top: 3800px;
+    margin-top: 82px;
 }
 
 .st2 {
     right: 70px;
-    top: 4036px;
+    margin-top: 318px;
 }
 
 .st3 {
     right: -95px;
-    top: 4130px;
+    margin-top: 410px;
 }
 
 .st4 {
     left: -73px;
-    top: 3900px;
-    ;
+    margin-top: 184px;
 }
 
 .st5 {
     left: 8px;
-    top: 4134px;
-    ;
+    margin-top: 415px;
+
 }
 
-.tit {
+/*footer section*/
+.footer-titles {
     color: rgba(255, 255, 255, 0.80);
     font-family: Turret Road;
     font-size: 32px;
@@ -495,7 +544,7 @@ body {
     margin-bottom: 81px;
 }
 
-.cmp a {
+.footer-pages a {
     color: rgba(255, 255, 255, 0.50);
     font-family: Turret Road;
     font-size: 26px;
@@ -506,17 +555,35 @@ body {
     text-decoration: none;
 }
 
-.cmp a:hover {
+.footer-pages a:hover {
     color: #b99bc9;
     transition: 0.3s;
 }
 
-.cmp {
+.footer-pages svg {
+    margin-right: 30px;
+}
+
+.footer-pages svg:hover>path {
+    fill: #b99bc9;
+    transition: 0.3s;
+}
+
+.footer-pages {
     margin-bottom: 10px;
 }
 
-.infos .col {
-    margin-right: 75px;
+
+
+
+/*copyright section*/
+.copyright {
+    height: 89px;
+    border-radius: 10px;
+    background: rgba(47, 57, 77, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ft {
@@ -537,24 +604,14 @@ body {
     line-height: normal;
 }
 
-.siv {
-    text-align: center;
-}
 
-.last_words {
-    height: 89px;
-    border-radius: 10px;
-    background: rgba(47, 57, 77, 0.35);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* particles css*/
+#bg {
 
-.cmps svg {
-    margin-right: 30px;
-}
-
-.cmps svg:hover>path {
-    fill: #b99bc9;
-    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 800px;
 }
