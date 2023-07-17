@@ -5,54 +5,6 @@ function show() {
     dropdown.classList.toggle('active');
 }
 
-function showAndToggle() {
-    show2();
-    togui();
-}
-let dropdown2 = document.querySelector('.dropdown2');
-function show2() {
-    dropdown2.classList.toggle('active');
-
-}
-function togui() {
-    var keyframesCSS
-    if (dropdown2.classList.contains('active')) {
-        keyframesCSS = `
-      
-        @keyframes dropdownAnimation {
-          from {
-            height: 100px;
-            opacity:0;
-          }
-          to {
-            height: 170px;
-            opacity:1;
-          }
-        }    
-      `;
-    }
-    else {
-        keyframesCSS = `
-        @keyframes dropdownAnimation {
-          from {
-            height: 0px;
-            opacity:;
-          }
-          to {
-            height: 100px;
-            opacity:1;
-          }
-        }    
-      `;
-    }
-
-    var styleElement = document.createElement('style');
-    styleElement.appendChild(document.createTextNode(keyframesCSS));
-
-    document.head.appendChild(styleElement);
-
-
-}
 
 let sections = document.querySelectorAll('.sec');
 let sectionPositions = Array.from(sections).map(sec => {
@@ -64,16 +16,19 @@ let sectionPositions = Array.from(sections).map(sec => {
     };
 });
 
-
 function handleScroll() {
-    const scrollPosition = window.pageYOffset + (window.innerHeight * 0.6);
+    const scrollPosition = window.scrollY + (window.innerHeight * 0.6);
+
     sectionPositions.forEach(({ element, offsetTop, offsetBottom }) => {
-        if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+        const isVisible = scrollPosition >= offsetTop && scrollPosition < offsetBottom;
+
+        if (isVisible && !element.classList.contains('show-animate')) {
             element.classList.add('show-animate');
-        } else {
+        } else if (!isVisible && element.classList.contains('show-animate')) {
             element.classList.remove('show-animate');
         }
     });
 }
 
+// Add the event listener for scrolling
 window.addEventListener('scroll', handleScroll);
