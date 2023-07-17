@@ -113,8 +113,11 @@
     border-color: transparent;
 }
 
-.dropcont {
-
+.dropdown {
+    position: relative;
+  }
+  
+  .dropcont {
     margin-top: 16px;
     padding-top: 27px;
     display: none;
@@ -122,23 +125,41 @@
     background-color: rgba(88, 121, 188, 0.3);
     width: 170px;
     border-radius: 10px;
-
-}
-
-.dropdown.active .dropcont {
+    height: 0;
+    opacity: 0;
+    animation: dropdownAnimation 0.2s ease-out forwards;
+  }
+  
+  .dropdown.active .dropcont,
+  .dropdown:hover .dropcont {
     display: block;
-}
+    animation: dropdownAnimation 0.2s ease-in forwards;
+  }
+  
+  @keyframes dropdownAnimation {
+    from {
+      height: 0;
+      opacity: 0;
+    }
+    to {
+      height: 100px;
+      opacity: 1;
+    }
+  }
+  
+ .dropdown.active > .nav-item {
+    color: white;
+ }
 
 .dropdown.active .nav-item svg,
 .dropdown2.active .btndrop2 svg,
 .dropdown:hover>.nav-item svg {
     transform: rotate(180deg);
     transition: 0.5s;
+    
 }
 
-.dropdown:hover>.dropcont {
-    display: block;
-}
+
 
 .dropdown .nav-item svg,
 .dropdown2 .btndrop2 svg {
@@ -147,6 +168,8 @@
 }
 
 .dropdown.active .nav-item svg path,
+.dropdown:hover .nav-item svg path,
+
 .dropdown2.active .btndrop2 svg path {
     fill-opacity: 1;
     transition: 0.5s;
@@ -163,7 +186,7 @@
     top: -9px;
     right: 0;
     bottom: 0;
-    left: 119px;
+    left: 130px;
 }
 
 .btndrop2 {
@@ -186,12 +209,13 @@
 }
 
 .dropdown2.active .dropcont2 {
-    transition: .7s;
+    
     display: block;
 }
 
 .dropcont2 {
     display: none;
+    
 }
 
 
@@ -245,7 +269,7 @@
 }
 
 .p2 {
-    color: #FFF;
+    color: #E5E5E5;
     font-family: Turret Road;
     font-size: 24px;
     font-style: normal;
@@ -340,8 +364,7 @@ div .topic {
 
 .sponsorbar .row {
     background: rgba(47, 57, 77, 0.35);
-    margin-left: 40px;
-    margin-right: 40px;
+ 
     align-items: center;
 }
 
@@ -349,46 +372,27 @@ div .topic {
     overflow: hidden;
 }
 
-.sponsor .row {
+.sponsor .spn1 {
     animation: moveBar 12s linear infinite;
     background-color: transparent;
+    transform: translateX(100%);
+    animation-delay: 6s;
 }
-
-
+.sponsor .spn2 {
+    animation: moveBar 12s linear infinite;
+    background-color: transparent;
+   
+    position: absolute;
+    
+}
 
 @keyframes moveBar {
     0% {
-        transform: translateX(0);
+        transform: translateX(100%);
         opacity: 1;
     }
-
-    25% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    26% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
-    50% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    75% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    76% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
     100% {
-        transform: translateX(0);
+        transform: translateX(-100%);
         opacity: 1;
     }
 }
@@ -417,7 +421,7 @@ div .topic {
 }
 
 .res-text {
-    color: rgba(255, 255, 255, 0.84);
+    color: rgba(229, 229, 229, 0.84);
     font-family: Turret Road;
     font-size: 24px;
     font-style: normal;
@@ -486,7 +490,8 @@ div .topic {
 }
 
 .contact-speech {
-    color: #FFF;
+    color: #E5E5E5;
+
     text-align: center;
     font-family: Turret Road;
     font-size: 32px;
