@@ -90,7 +90,7 @@
 }
 
 .trans-btn {
-    border-radius: 5px;
+    border-radius: 6px;
     background: transparent;
     
     width: 117px;
@@ -528,7 +528,6 @@ div .topic {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 10px;
     text-decoration: none;
 }
 
