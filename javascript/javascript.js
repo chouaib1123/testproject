@@ -40,7 +40,7 @@ function joinUs() {
   const container = document.querySelector(".main-container");
   const content = document.querySelector(".screen1");
   const home = document.querySelector(".gobacktotop");
-  home.classList.remove("stickky");
+  home.style.display = "none";
   container.style.transform = "translateX(-100%)";
   content.style.transform = "translateX(0%)";
 
