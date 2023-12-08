@@ -764,14 +764,14 @@ function switchLanguage() {
       div.style.flexDirection = isArabic ? "row-reverse" : "row";
       div.style.textAlign = isArabic ? "right" : "left";
     }
-    var button = document.getElementById("toggleButton");
-    if (isArabic) {
-      button.textContent =
-        button.textContent === "Show More" ? "اظهر المزيد" : "اظهر اقل";
-    } else {
-      button.textContent =
-        button.textContent === "اظهر المزيد" ? "Show More" : "Show Less";
-    }
+  }
+  var button = document.getElementById("toggleButton");
+  if (isArabic) {
+    button.textContent =
+      button.textContent === "Show More" ? "اظهر المزيد" : "اظهر اقل";
+  } else {
+    button.textContent =
+      button.textContent === "اظهر المزيد" ? "Show More" : "Show Less";
   }
 
   if (isArabic) {
