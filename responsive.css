@@ -523,7 +523,7 @@
     }
     .parts{
         flex-direction: row;
-        animation: translateAnimation 10s linear infinite;
+        animation: translateAnimation 19s linear infinite;
         gap: 60px;
     }
     @keyframes translateAnimation {
