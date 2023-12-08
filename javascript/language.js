@@ -702,26 +702,38 @@ function switchLanguage() {
   document.getElementById("logInn").textContent =
     translations[currentLanguage].logIn;
   const isArabic = currentLanguage === "ar";
+  const screenWidth =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
   const containerDiv = document.querySelector(".first_vue_container");
 
   const allDivs = containerDiv.querySelectorAll("div");
   const problem = document.getElementById("details");
-  problem.style.width = isArabic ? "auto" : "70%";
-  for (const div of allDivs) {
-    div.style.flexDirection = isArabic ? "row-reverse" : "row";
-    div.style.textAlign = isArabic ? "right" : "left";
+  if (screenWidth > 700) {
+    problem.style.width = isArabic ? "auto" : "70%";
+    for (const div of allDivs) {
+      div.style.flexDirection = isArabic ? "row-reverse" : "row";
+      div.style.textAlign = isArabic ? "right" : "left";
+    }
   }
-  const allDivss = aboutContainer.querySelectorAll("div");
 
-  for (const div of allDivss) {
-    div.style.textAlign = isArabic ? "right" : "left";
+  const bigg = aboutContainer.querySelector(".big-card");
+  const allDivss = bigg.querySelectorAll("div");
+  if (screenWidth > 700) {
+    for (const div of allDivss) {
+      div.style.textAlign = isArabic ? "right" : "left";
+    }
   }
+
   const allDivsss = questionsContainer.querySelectorAll("div");
   const allquestion = questionsContainer.querySelectorAll(".question");
 
   const head = questionsContainer.querySelector(".header");
-  head.style.flexDirection = isArabic ? "row-reverse" : "row";
-  head.style.justifyContent = isArabic ? "space-between" : "row";
+  if (screenWidth > 650) {
+    head.style.flexDirection = isArabic ? "row-reverse" : "row";
+  }
+
   const answers = questionsContainer.querySelectorAll(".answer");
 
   for (const div of answers) {
@@ -730,7 +742,9 @@ function switchLanguage() {
   for (const div of allquestion) {
     div.style.flexDirection = isArabic ? "row-reverse" : "row";
   }
-
+  for (const div of allDivsss) {
+    div.style.textAlign = isArabic ? "right" : "left";
+  }
   const details = document.querySelectorAll(".detail-inplabel");
   const last = document.querySelector(".screen222 .detail-inplabel2 ");
   last.style.justifyContent = isArabic ? "flex-end" : "flex-start";
@@ -749,11 +763,16 @@ function switchLanguage() {
       div.style.flexDirection = isArabic ? "row-reverse" : "row";
       div.style.textAlign = isArabic ? "right" : "left";
     }
+    var button = document.getElementById("toggleButton");
+    if (isArabic) {
+      button.textContent =
+        button.textContent === "Show More" ? "اظهر المزيد" : "اظهر اقل";
+    } else {
+      button.textContent =
+        button.textContent === "اظهر المزيد" ? "Show More" : "Show Less";
+    }
   }
 
-  for (const div of allDivsss) {
-    div.style.textAlign = isArabic ? "right" : "left";
-  }
   if (isArabic) {
     document.documentElement.style.setProperty("--ff-small", "'Tajawal Light'");
     document.documentElement.style.setProperty("--ff-med", "'Tajawal Medium'");
@@ -767,3 +786,67 @@ function switchLanguage() {
     document.documentElement.style.removeProperty("--ff-bold");
   }
 }
+let stylesApplied = false;
+
+function adjustDivStyle() {
+  isArabic = currentLanguage === "ar";
+  const aboutContainer = document.querySelector(".about-container");
+  const questionsContainer = document.querySelector(".questions-container");
+  const head = questionsContainer.querySelector(".header");
+  const bigg = aboutContainer.querySelector(".big-card");
+  const allDivss = bigg.querySelectorAll("div");
+  const containerDiv = document.querySelector(".first_vue_container");
+  const dav = containerDiv.querySelector(".first_vue");
+  const allDivs = dav.querySelectorAll("div");
+  const problem = document.getElementById("details");
+  const screenWidth =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
+  if (screenWidth < 700) {
+    problem.removeAttribute("style");
+    allDivs.forEach((div) => div.removeAttribute("style"));
+    allDivss.forEach((div) => div.removeAttribute("style"));
+    if (screenWidth < 650) {
+      head.removeAttribute("style");
+    }
+    stylesApplied = false;
+  } else {
+    if (!stylesApplied) {
+      head.style.flexDirection = isArabic ? "row-reverse" : "row";
+      problem.style.width = isArabic ? "auto" : "70%";
+      allDivs.forEach((div) => {
+        div.style.flexDirection = isArabic ? "row-reverse" : "row";
+        div.style.textAlign = isArabic ? "right" : "left";
+      });
+      for (const div of allDivss) {
+        div.style.textAlign = isArabic ? "right" : "left";
+      }
+      stylesApplied = true;
+    }
+  }
+}
+
+window.addEventListener("resize", adjustDivStyle);
+
+document.addEventListener("DOMContentLoaded", function () {
+  var setToToggle = document.querySelector(
+    ".questions-container .questions .qsts:nth-child(2)"
+  );
+  var button = document.getElementById("toggleButton");
+
+  button.addEventListener("click", function () {
+    isArabic = currentLanguage === "ar";
+
+    console.log(isArabic);
+    setToToggle.classList.toggle("hidden");
+    button.textContent = setToToggle.classList.contains("hidden")
+      ? isArabic
+        ? "اظهر المزيد"
+        : "Show More"
+      : isArabic
+      ? "اظهر اقل"
+      : "Show Less";
+  });
+});

@@ -42,7 +42,7 @@ button {
     background: var(--scd-color);
     overflow: hidden;
     position: relative;
-
+    
 }
 
 .navbar {
@@ -114,7 +114,7 @@ button {
     display: flex;
     gap: 12px;
     
-    margin: 0 auto 100px;
+    margin: 0 100px 100px 150px;
     position: relative;
     
     max-width: 1210px;
@@ -256,7 +256,7 @@ button {
 
 
 .about-container .big-card {
-    width: 1211px;
+    max-width: 1211px;
 
     border-radius: 10px;
     background: rgba(69, 110, 202, 0.14);
@@ -288,6 +288,7 @@ button {
 
 .howitwork-container {
     margin: 0px 160px;
+   
 }
 
 .parts {
@@ -296,7 +297,15 @@ button {
     margin-top: 60px;
     position: relative;
 }
+.double_parts{
+    display: flex;
+    gap: 60px;
+    position: relative;
+}
+.tt{
+    display: none;
 
+}
 .parts .part {
     display: flex;
     flex-direction: column;
@@ -324,7 +333,7 @@ button {
     width: 80%;
 }
 
-.parts .t img {
+.parts .t  {
     position: absolute;
     content: "";
     top: -20px;
@@ -346,6 +355,10 @@ button {
     margin-top: 60px;
 
 }
+.double-spn{
+    display: flex;
+    gap: 110px;
+}
 
 .spnr-title {
     text-align: center;
@@ -364,7 +377,21 @@ button {
     gap: 350px;
     margin-bottom: 60px;
 }
+.showmore{
+    text-align: center;
+    display: none;
+}
 
+
+.showmore button{
+    text-align: center;
+    background: none;
+    border: none;
+    font-size: var(--fz-small);
+    font-family: var(--ff-reg);
+    text-decoration: underline;
+
+}
 .questions-container .header .speech {
     width: auto;
     margin-bottom: 20px;
@@ -379,18 +406,15 @@ button {
 .questions-container .questions {
     display: flex;
     gap: 66px;
+    margin: auto 20px;
 }
 
-.questions-container .questions .qsts {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
 
-
+.hidden{
+    display: block;
 }
-
 .qsts .question-answer {
-    width: 571px;
+    max-width: 571px;
     max-height: 100px;
     padding: 24px 24px 20px;
     border-radius: 10px;
@@ -398,6 +422,7 @@ button {
     cursor: pointer;
     overflow: hidden;
     transition: all 0.3s;
+    margin-bottom: 25px;
 }
 
 .qsts .question-answer .question {

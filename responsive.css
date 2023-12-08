@@ -1,0 +1,624 @@
+@media screen and (max-width:1300px) {
+
+    .main-img img {
+        width: 460px;
+    }
+
+    .main .details {
+        width: 80%;
+    }
+
+    :root {
+        --fz-xbig: 40px;
+        --fz-big: 34px;
+        --fz-med: 23px;
+        --fz-small: 19px;
+        --fz-xsmall: 18px;
+        --fz-xxsmall: 16px;
+    }
+
+}
+
+@media screen and (max-width:1250px) {
+
+    .navbar {
+        margin: 0 44px 114px 90px;
+    }
+
+    .sticky {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0;
+        width: 100%;
+        background-color: rgba(82, 95, 225, 0.8);
+        margin: 0 auto;
+        z-index: 999999999;
+        padding: 10px 27px 10px 90px;
+
+        transition: all 0.3s;
+    }
+
+    .first_vue {
+        margin: 0 80px 100px 100px;
+    }
+
+    .sponsors .spn:nth-child(1) img {
+        width: 160px;
+    }
+
+    .sponsors .spn:nth-child(2) img {
+        width: 160px;
+    }
+
+    .sponsors .spn:nth-child(3) img {
+        width: 180px;
+    }
+
+    .sponsors .spn:nth-child(4) img {
+        width: 190px;
+    }
+
+    .sponsors,
+    .double-spn {
+        gap: 80px;
+    }
+
+    .parts {
+        transform: scale(0.8);
+    }
+
+    .qsts .question-answer .question {
+        gap: 90px;
+    }
+
+    .about-container .big-card {
+        margin: 0 50px;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    .main-img img {
+        width: 390px;
+    }
+
+    .whyus_container .cards {
+        gap: 30px;
+    }
+
+    .whyus_container .cards .card {
+        width: 290px;
+        height: 290px;
+    }
+
+    .about-container .big-card .card {
+        margin: 0px 40px 0;
+        gap: 30px;
+    }
+
+    .about-container .big-card .card img {
+        width: 400px;
+    }
+
+    :root {
+        --fz-xbig: 37px;
+        --fz-big: 30px;
+        --fz-med: 21px;
+        --fz-small: 18px;
+        --fz-xsmall: 17px;
+        --fz-xxsmall: 15px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .social-medias {
+        gap: 10px;
+    }
+
+    .contact {
+        gap: 70px;
+    }
+
+    .contact img {
+        width: 28px;
+    }
+
+    .main-img img {
+        width: 340px;
+    }
+
+    .flex-container {
+        padding-bottom: 50px;
+    }
+
+    :root {
+        --fz-xbig: 34px;
+        --fz-big: 27px;
+        --fz-med: 20px;
+        --fz-small: 17px;
+        --fz-xsmall: 16px;
+        --fz-xxsmall: 14px;
+    }
+
+    .joinus .joinus-card {
+        width: 750px;
+    }
+
+    .joinus-card-speech {
+        width: 70%;
+    }
+
+    .questions-container .questions {
+        gap: 30px;
+    }
+
+    .navbar {
+        margin: 0 34px 114px 60px;
+    }
+
+    .sticky {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0;
+        width: 100%;
+        background-color: rgba(82, 95, 225, 0.8);
+        margin: 0 auto;
+        z-index: 999999999;
+        padding: 10px 22px 10px 60px;
+
+        transition: all 0.3s;
+    }
+
+    .first_vue {
+        margin: 0 70px 100px 70px;
+    }
+
+    .btn3 button {
+        padding: 10px 20px;
+    }
+
+    .btn1 button {
+        padding: 8px 28px;
+    }
+
+    .main .buttons .btn1 button {
+        padding: 8px 35px;
+    }
+
+    .btn2 button {
+        padding: 10px 12px;
+    }
+
+    .parts {
+        transform: scale(0.65);
+    }
+
+    .sponsors .spn:nth-child(1) img {
+        width: 120px;
+    }
+
+    .sponsors .spn:nth-child(2) img {
+        width: 120px;
+    }
+
+    .sponsors .spn:nth-child(3) img {
+        width: 140px;
+    }
+
+    .sponsors .spn:nth-child(4) img {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .nav_loglink {
+
+        gap: 40px;
+    }
+
+    .whyus_container .cards {
+        flex-direction: column;
+        width: 70%;
+        align-items: center;
+    }
+
+    .whyus_container .cards .card {
+        width: 90%;
+
+    }
+
+    .whyus_container .cards .card .tit {
+        margin: 0;
+    }
+
+    .whyus_container .cards .card .spch {
+        width: 50%;
+    }
+
+    .whyus_container .cards {
+        gap: 70px;
+    }
+
+    .main .details {
+        width: 100%;
+    }
+
+    .questions-container .header {
+        gap: 200px;
+    }
+
+    .qsts .question-answer .question {
+        gap: 40px;
+    }
+
+    .about-container .big-card .card img {
+        width: 300px;
+    }
+
+    .sp .tit {
+
+        margin: 20px 0px 16px;
+    }
+
+    .about-container .big-card .card {
+
+        gap: 0;
+    }
+
+    .nav_loglink img {
+        width: 110px;
+    }
+
+    .flex-container .speech {
+        width: 80%;
+    }
+
+    .first_vue {
+        margin: 0 25px 100px 60px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .sponsor {
+        background-color: #525FE1;
+        padding: 33px 0px 53px;
+
+    }
+
+    .howitwork-container {
+        margin: 0 100px;
+    }
+
+    .t {
+        display: none;
+    }
+
+    .tt {
+        position: absolute;
+        display: block;
+        top: -20px;
+        left: 0;
+
+    }
+
+    .howitwork-container {
+        margin: 0;
+
+        overflow-x: hidden;
+
+    }
+
+    .double_parts:nth-child(2) {
+        padding-bottom: 100px;
+    }
+
+    .t2 {
+        left: -150px;
+    }
+
+    .parts {
+        flex-direction: column;
+        transform: scale(0.9);
+        gap: 170px;
+
+    }
+
+    .nav_loglink img {
+        width: 90px;
+    }
+
+    :root {
+        --fz-xbig: 33px;
+        --fz-big: 25px;
+        --fz-med: 18px;
+        --fz-small: 16px;
+        --fz-xsmall: 15px;
+        --fz-xxsmall: 13px;
+    }
+
+    .main-img img {
+        width: 290px;
+    }
+
+    .navbar {
+        margin: 0 25px 114px;
+    }
+
+    .sticky {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0;
+        width: 100%;
+        background-color: rgba(82, 95, 225, 0.8);
+        margin: 0 auto;
+        z-index: 999999999;
+        padding: 10px 25px 10px;
+
+        transition: all 0.3s;
+    }
+
+    .sponsors .spn:nth-child(1) img {
+        width: 100px;
+    }
+
+    .sponsors .spn:nth-child(2) img {
+        width: 100px;
+    }
+
+    .sponsors .spn:nth-child(3) img {
+        width: 120px;
+    }
+
+    .sponsors .spn:nth-child(4) img {
+        width: 130px;
+    }
+
+    .joinus .joinus-card {
+        width: 70%;
+    }
+
+    .nav_links {
+
+        gap: 12px;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+
+    .about-container .big-card {
+        margin: 0 20px;
+    }
+
+    .about-container .big-card .card {
+        margin: 0px 20px 0;
+
+    }
+
+    .questions-container .header {
+        gap: 100px;
+    }
+
+    .joinus-card-speech {
+        width: 90%;
+    }
+
+    .footer .spch {
+        width: 50%;
+    }
+
+    .contact {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .main-img img {
+        width: 250px;
+    }
+
+    :root {
+        --fz-xbig: 32px;
+    }
+
+}
+
+
+@media screen and (max-width:700px) {
+    .sponsors {
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 40px;
+    }
+    .sponsors .spn:nth-child(1) img {
+        width: 120px;
+    }
+
+    .sponsors .spn:nth-child(2) img {
+        width: 120px;
+    }
+
+    .sponsors .spn:nth-child(3) img {
+        width: 140px;
+    }
+
+    .sponsors .spn:nth-child(4) img {
+        width: 150px;
+    }
+    .main-img img {
+        display: none;
+    }
+    .main{
+        display: flex;
+        flex-direction: column  ;
+        align-items: center;
+        text-align: center;
+    }
+    .about-container .big-card .card{
+        
+        align-items: center;
+        text-align: center;
+    }
+    .about-container .big-card .card1{
+ flex-direction: column-reverse;
+    }
+    .about-container .big-card .card2{
+        flex-direction: column;
+           }
+    .questions{
+        flex-direction: column;
+    }
+    .qsts .question-answer .answer {
+        font-size: var(--fz-small);
+        font-family: var(--ff-small);
+        margin-top: 70px;
+        width: 90%;
+    }
+    .about-container .big-card {
+        gap: 100px   ;
+    }
+    .joinus .joinus-card {
+        width: 90%;
+    }
+    .questions-container .questions {
+        gap: 0px;
+    }
+    .hidden{
+        display: none;
+    }
+    .showmore{
+        display: block;
+    }
+
+    .first_vue {
+        margin: 0 60px 100px ;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width:650px) {
+ .nav_links{
+    display: none;
+ }
+ .questions-container .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.questions-container .header .head-main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+}
+
+@media screen and (max-width:550px) {
+    .whyus_container .cards {
+        
+        width: 90%;
+        
+    }
+    .parts{
+        flex-direction: row;
+        animation: translateAnimation 10s linear infinite;
+        gap: 60px;
+    }
+    @keyframes translateAnimation {
+        0% {
+          transform: translateX(40%);
+        }
+        5.5% {
+            transform: translateX(40%);
+          }
+        11%{transform: translateX(20%);}
+        16.5% {
+            transform: translateX(20%);
+          }
+        22%{
+            transform: translateX(0%); 
+        }
+        27.5%{
+            transform: translateX(0%);
+        }
+        33%{
+            transform: translateX(-20%);
+        }
+        38.5% {
+            transform: translateX(-20%);
+        }
+        44%{
+            transform: translateX(-20%);  
+        }
+        49.5%{
+            transform: translateX(-40%);   
+        }
+        55%{
+            transform: translateX(-40%);  
+        }
+        60.5%{
+            transform: translateX(-20%);  
+        }
+        66%{
+            transform: translateX(-20%);  
+        }
+        71.5%{
+            transform: translateX(0%);  
+        }
+        77%{
+            transform: translateX(0%); 
+        }
+        82.5%{
+            transform: translateX(20%); 
+        }
+        88% {
+            transform: translateX(20%);
+          }
+        93.5%{
+            transform: translateX(40%);
+        }  
+        100% {
+          transform: translateX(40%);
+        }
+      }
+    .tt{
+        display: none;
+    }
+    .t{
+        display: block;
+    }
+}
+@media screen and (max-width:500px) {
+    .nav_buttons .btn1{
+   display: none;
+    }
+    .main .buttons {
+        
+        flex-direction: column;
+        width: 70%;
+    }
+    .main .buttons button{
+        
+      
+        width: 80%;
+    }
+    .about-container .big-card .card img {
+        width: 230px;
+    }
+   
+   }
+
+   @media screen and (max-width:400px) {
+    .main .buttons button{
+        
+      
+        width: 100%;
+    }
+    .first_vue {
+        margin: 0 20px 100px ;
+        gap: 0;
+    }
+   }
+   
