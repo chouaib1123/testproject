@@ -176,7 +176,9 @@
     .btn3 button {
         padding: 10px 20px;
     }
-
+    .btns .btn3 button {
+        padding: 10px 30px;
+    }
     .btn1 button {
         padding: 8px 28px;
     }
@@ -385,7 +387,12 @@
 
 
 @media screen and (max-width:750px) {
-
+    .steps img{
+     width: 500px;
+    }
+    .infos{
+        width: 642px;
+    }
     .about-container .big-card {
         margin: 0 20px;
     }
@@ -425,6 +432,16 @@
 
 
 @media screen and (max-width:700px) {
+    .screen .navbar {
+        margin: auto 30px 60px;
+        
+    }
+    .steps img{
+        width: 400px;
+       }
+       .infos{
+           width: 542px;
+       }
     .sponsors {
         flex-direction: column;
         margin-top: 40px;
@@ -500,6 +517,23 @@
  .nav_links{
     display: none;
  }
+ .screen .navbar{
+    margin-bottom: 100px;
+    position: relative;
+    
+ }
+ .screen .navbar .logo img{
+    width: 90px;
+ }
+ .screen .navbar .nav_links{
+    display: flex;
+     width: 100%;
+     position: absolute;
+     left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    top: 100%;
+ }
  .questions-container .header {
     display: flex;
     flex-direction: column;
@@ -516,6 +550,36 @@
 }
 
 @media screen and (max-width:550px) {
+     
+    :root {
+        --fz-xbig: 31px;
+        --fz-big: 24px;
+        --fz-med: 17px;
+        --fz-small: 15px;
+        --fz-xsmall: 14px;
+        --fz-xxsmall: 12px;
+    }
+    .screen .navbar .nav_links .frst {
+        font-size: var(--fz-big);
+    }
+    .nm-tel {
+        flex-direction: column;
+    }
+    .infos {
+        width: 90%;
+       
+    }
+    .info{
+         padding: 0px 20px;
+    }
+    .table .steps {
+        width: 90%;
+        padding: 30px 10px;
+        text-align: center;
+    }
+    .steps img {
+        width: 100%;
+    }
     .whyus_container .cards {
         
         width: 90%;
@@ -591,6 +655,23 @@
     }
 }
 @media screen and (max-width:500px) {
+   
+    .info {
+       margin:50px 30px ;
+    }
+    
+    .vect img{
+        width: 18px;
+    }
+    .btns{
+        margin: 0 20px;
+    }
+    .btns .btn3 button {
+        padding: 10px 22px;
+    }
+    .btn1 button {
+        padding: 8px 20px;
+    }
     .nav_buttons .btn1{
    display: none;
     }
@@ -611,6 +692,26 @@
    }
 
    @media screen and (max-width:400px) {
+    .sponsors .spn:nth-child(1) img {
+        width: 100px;
+    }
+
+    .sponsors .spn:nth-child(2) img {
+        width: 100px;
+    }
+
+    .sponsors .spn:nth-child(3) img {
+        width: 120px;
+    }
+
+    .sponsors .spn:nth-child(4) img {
+        width: 130px;
+    }
+    .qsts .question-answer .question {
+        gap: 10px;
+    }
+    
+    
     .main .buttons button{
         
       

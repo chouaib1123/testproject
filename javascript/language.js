@@ -720,7 +720,7 @@ function switchLanguage() {
 
   const bigg = aboutContainer.querySelector(".big-card");
   const allDivss = bigg.querySelectorAll("div");
-  if (screenWidth > 700) {
+  if (screenWidth > 701) {
     for (const div of allDivss) {
       div.style.textAlign = isArabic ? "right" : "left";
     }

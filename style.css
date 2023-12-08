@@ -277,6 +277,7 @@ button {
     font-size: var(--fz-big);
     font-family: var(--ff-med);
     margin: 70px 0px 16px;
+    color: #263584;
 }
 
 .sp .spch {
@@ -568,6 +569,7 @@ body {
     transform: translateX(100%);
     transition: 1s all;
     padding-bottom: 100px;
+    
 }
 
 .screen2 {
@@ -576,6 +578,7 @@ body {
 
 .screen .navbar {
     margin: auto 118px 60px;
+    
 }
 
 .screen .navbar .logo {
@@ -637,7 +640,8 @@ body {
 
 .infos .tit {
     text-align: center;
-    color: #D0D0D0;
+    color: white;
+    
     font-size: var(--fz-med);
     font-family: var(--ff-reg);
 
@@ -679,7 +683,7 @@ body {
     padding: 20px 13px;
     border: 1.5px solid #818181;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-    width: 60%;
+    width: 100%;
     color: var(--prm-color);
     font-size: var(--fz-xxsmall);
     font-family: var(--ff-small);
@@ -688,7 +692,7 @@ body {
 
 .joinasdropdown {
     position: absolute;
-    width: 60%;
+    width: 100%;
     background-color: white;
     top: 130%;
     display: flex;
