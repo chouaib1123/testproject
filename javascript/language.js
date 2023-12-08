@@ -726,7 +726,8 @@ function switchLanguage() {
     }
   }
 
-  const allDivsss = questionsContainer.querySelectorAll("div");
+  const allDivsss = questionsContainer.querySelectorAll(".question-answer");
+
   const allquestion = questionsContainer.querySelectorAll(".question");
 
   const head = questionsContainer.querySelector(".header");

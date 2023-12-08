@@ -570,8 +570,9 @@
        
     }
     .info{
-         padding: 0px 20px;
+        padding: 0;
     }
+    
     .table .steps {
         width: 90%;
         padding: 30px 10px;
@@ -656,6 +657,10 @@
 }
 @media screen and (max-width:500px) {
    
+
+.detail-inplabel .label{
+    font-size: var(--fz-xxsmall);
+}
     .info {
        margin:50px 30px ;
     }
