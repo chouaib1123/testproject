@@ -251,6 +251,9 @@ const translationsForm = {
     joinAs: "انضم كـ...",
     backBtn: "العودة",
     nextBtn: "التالي",
+    affiliate: "مسوق",
+    seller: "بائع",
+
     languageSwitch: "EN",
   },
   en: {
@@ -263,6 +266,8 @@ const translationsForm = {
     joinAs: "Join as...",
     backBtn: "Back",
     nextBtn: "Next",
+    affiliate: "affiliate",
+    seller: "seller",
     languageSwitch: "AR",
   },
 };
@@ -564,9 +569,11 @@ function switchLanguage() {
     translationsForm[currentLanguage].backBtn;
   screen1Div.querySelector(".btn3 button").textContent =
     translationsForm[currentLanguage].nextBtn;
-  screen1Div.querySelector(".btn2 button").textContent =
-    translationsForm[currentLanguage].languageSwitch;
 
+  const t = document.querySelectorAll(".btn2 button");
+  for (const tt of t) {
+    tt.textContent = translationsForm[currentLanguage].languageSwitch;
+  }
   const fulfillmentGenieSpch = document.querySelector(".footer .spch");
 
   fulfillmentGenieSpch.textContent =
@@ -678,7 +685,11 @@ function switchLanguage() {
     cardTranslations[currentLanguage].card3.tit;
   card3.querySelector(".spch").textContent =
     cardTranslations[currentLanguage].card3.spch;
-
+  const joinasDropdown = document.querySelector(".joinasdropdown1");
+  joinasDropdown.querySelector(".choix1").textContent =
+    translationsForm[currentLanguage].affiliate;
+  joinasDropdown.querySelector(".choix2").textContent =
+    translationsForm[currentLanguage].seller;
   document.getElementById("language-switch").textContent =
     translations[currentLanguage].languageSwitch;
   document.getElementById("why-us").textContent =
@@ -755,7 +766,7 @@ function switchLanguage() {
     const flechs = detail.querySelectorAll(".flech");
 
     for (const flech of flechs) {
-      flech.style.marginRight = isArabic ? "-50px" : "0";
+      flech.style.marginRight = isArabic ? "-30px" : "0";
     }
     for (const drop of drops) {
       drop.style.right = isArabic ? "0" : "auto";

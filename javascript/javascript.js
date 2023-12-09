@@ -50,9 +50,14 @@ function next1() {
   const content1 = document.querySelector(".screen21");
   const content2 = document.querySelector(".screen22");
   const test = document.querySelector(".joinaschoices1 .inp").textContent;
-  if (test === "Affiliate") content1.style.transform = "translateX(0%)";
-  else if (test === "Seller") content2.style.transform = "translateX(0%)";
+
+  if (test === "Affiliate" || test === "مسوق") {
+    content1.style.transform = "translateX(0%)";
+  } else if (test === "Seller" || test === "بائع") {
+    content2.style.transform = "translateX(0%)";
+  }
 }
+
 function next2() {
   const content = document.querySelector(".screen211");
   content.style.transform = "translateX(0%)";
