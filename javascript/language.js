@@ -766,7 +766,7 @@ function switchLanguage() {
     const flechs = detail.querySelectorAll(".flech");
 
     for (const flech of flechs) {
-      flech.style.marginRight = isArabic ? "-30px" : "0";
+      flech.style.marginRight = isArabic ? "-35px" : "0";
     }
     for (const drop of drops) {
       drop.style.right = isArabic ? "0" : "auto";

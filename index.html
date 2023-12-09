@@ -7,9 +7,9 @@
   <title>Document</title>
 
   <!--css files-->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fonts/font.css">
-  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,7 @@
         </div>
         <div class="nav_buttons">
           <div class="btn1"><button id="logIn">Log in</button></div>
-          <div class="btn2"><button id="language-switch" onclick="switchLanguage()">AR</button></div>
+          <div class="btn2"><button id="language-switch" type="button" onclick="switchLanguage()">AR</button></div>
         </div>
       </div>
 
@@ -126,35 +126,44 @@
       <div class="parts">
         <div class="double_parts">
           <div class="part part1">
-          <div class="icon"><img src="assets/image/01.png" alt=""></div>
-          <div class="tit">Create an account</div>
-          <div class="spch">Open an account on the affiliate platform by filling out the registration form</div>
+            <div class="icon"><img src="assets/image/01.png" alt=""></div>
+            <div class="tit">Create an account</div>
+            <div class="spch">Open an account on the affiliate platform by filling out the registration form</div>
+          </div>
+          <div class="part part2">
+            <div class="icon"><img src="assets/image/02.png" alt=""></div>
+            <div class="tit">Selection of offers</div>
+            <div class="spch">Among the many offers in various fields, choose the ones that are right for you</div>
+          </div>
+          <div class="tt t1"><svg xmlns="http://www.w3.org/2000/svg" width="746" height="308" viewBox="0 0 746 308"
+              fill="none">
+              <path
+                d="M157.572 3C107.85 3.86449 7.36993 31.632 3.22643 135.786C-1.95294 265.979 82.9888 298.138 128.049 303.325C173.11 308.512 236.816 303.844 290.164 231.745C311.173 178.709 299.48 182.34 303.63 135.786C307.434 93.1245 355.942 3 462.637 3C569.332 3 602.998 92.7344 608.695 162.24C614.393 231.745 672.92 303.325 757.861 303.325"
+                stroke="#456ECA" stroke-opacity="0.4" stroke-width="5" stroke-linecap="round"
+                stroke-dasharray="44 44" />
+            </svg></div>
         </div>
-        <div class="part part2">
-          <div class="icon"><img src="assets/image/02.png" alt=""></div>
-          <div class="tit">Selection of offers</div>
-          <div class="spch">Among the many offers in various fields, choose the ones that are right for you</div>
+        <div class="double_parts">
+          <div class="part part3">
+            <div class="icon"><img src="assets/image/03.png" alt=""></div>
+            <div class="tit">Marketing of products</div>
+            <div class="spch">Through referral links or linking your store to the platform, start marketing to millions
+              of
+              customers</div>
+          </div>
+          <div class="part part4">
+            <div class="icon"><img src="assets/image/04.png" alt=""></div>
+            <div class="tit">Earn commission</div>
+            <div class="spch">Earn commission on all orders received by the client</div>
+          </div>
+          <div class="tt t2"><svg xmlns="http://www.w3.org/2000/svg" width="767" height="323" viewBox="0 0 767 323"
+              fill="none">
+              <path
+                d="M0 1.66595C-1.38071 1.66595 -2.5 2.78524 -2.5 4.16595C-2.5 5.54666 -1.38071 6.66595 0 6.66595V1.66595ZM146.058 163.406L148.55 163.201L146.058 163.406ZM449.052 176.892L446.575 176.554L449.052 176.892ZM762.404 176.892L759.953 176.399L762.404 176.892ZM611.988 302.723C611.012 303.699 611.012 305.282 611.988 306.259L627.898 322.169C628.874 323.145 630.457 323.145 631.434 322.169C632.41 321.192 632.41 319.609 631.434 318.633L617.291 304.491L631.434 290.349C632.41 289.372 632.41 287.789 631.434 286.813C630.457 285.837 628.874 285.837 627.898 286.813L611.988 302.723ZM19.7664 7.77522C21.1379 7.93438 22.3788 6.95157 22.5379 5.58006C22.6971 4.20855 21.7143 2.96771 20.3428 2.80855L19.7664 7.77522ZM59.7751 13.0689C58.5064 12.5241 57.0363 13.1111 56.4916 14.3798C55.9469 15.6485 56.5338 17.1186 57.8025 17.6633L59.7751 13.0689ZM90.7445 38.8162C91.7678 39.7432 93.3488 39.6651 94.2757 38.6418C95.2027 37.6185 95.1246 36.0375 94.1013 35.1106L90.7445 38.8162ZM119.83 66.7037C119.116 65.5218 117.579 65.1425 116.397 65.8564C115.216 66.5703 114.836 68.1071 115.55 69.2889L119.83 66.7037ZM131.943 105.263C132.382 106.572 133.798 107.279 135.108 106.84C136.417 106.402 137.123 104.985 136.685 103.676L131.943 105.263ZM146.16 143.084C145.947 141.72 144.668 140.787 143.304 141C141.939 141.214 141.007 142.493 141.22 143.857L146.16 143.084ZM146.369 182.472C146.659 183.822 147.989 184.682 149.339 184.392C150.688 184.102 151.548 182.772 151.258 181.422L146.369 182.472ZM163.283 216.241C162.682 214.998 161.188 214.477 159.945 215.078C158.701 215.679 158.181 217.174 158.781 218.417L163.283 216.241ZM179.141 250.521C180.01 251.594 181.584 251.76 182.657 250.891C183.73 250.022 183.896 248.448 183.027 247.375L179.141 250.521ZM209.433 273.051C208.333 272.215 206.765 272.429 205.93 273.529C205.094 274.628 205.308 276.196 206.407 277.032L209.433 273.051ZM239.39 296.017C240.666 296.544 242.128 295.938 242.656 294.662C243.183 293.386 242.577 291.924 241.301 291.396L239.39 296.017ZM276.817 300.825C275.448 300.65 274.195 301.618 274.019 302.987C273.844 304.357 274.812 305.609 276.181 305.785L276.817 300.825ZM313.822 306.206C315.198 306.087 316.217 304.876 316.099 303.501C315.98 302.125 314.769 301.106 313.393 301.224L313.822 306.206ZM348.984 294.597C347.66 294.992 346.908 296.384 347.302 297.708C347.697 299.031 349.089 299.783 350.413 299.389L348.984 294.597ZM384.605 284.496C385.79 283.787 386.177 282.252 385.469 281.067C384.76 279.882 383.225 279.495 382.04 280.204L384.605 284.496ZM410.064 257.673C409.12 258.681 409.172 260.263 410.18 261.206C411.188 262.15 412.771 262.098 413.714 261.09L410.064 257.673ZM435.189 230.536C435.822 229.309 435.341 227.801 434.115 227.168C432.888 226.534 431.38 227.015 430.746 228.242L435.189 230.536ZM443.23 194.385C442.905 195.727 443.73 197.078 445.072 197.403C446.413 197.728 447.765 196.904 448.09 195.562L443.23 194.385ZM454.727 157.221C454.979 155.863 454.082 154.559 452.725 154.307C451.367 154.055 450.062 154.952 449.811 156.309L454.727 157.221ZM459.756 116.465C459.329 117.778 460.047 119.189 461.36 119.616C462.673 120.043 464.083 119.325 464.511 118.012L459.756 116.465ZM480.356 81.0389C481.026 79.832 480.591 78.31 479.385 77.6394C478.178 76.9689 476.656 77.4038 475.985 78.6107L480.356 81.0389ZM500.426 45.3193C499.464 46.3105 499.489 47.8932 500.48 48.8544C501.471 49.8156 503.054 49.7912 504.015 48.7999L500.426 45.3193ZM535.716 24.6219C536.926 23.9571 537.368 22.4372 536.703 21.2271C536.038 20.0169 534.518 19.5749 533.308 20.2397L535.716 24.6219ZM571.874 5.47794C570.533 5.80485 569.711 7.15732 570.037 8.49877C570.364 9.84023 571.717 10.6627 573.058 10.3358L571.874 5.47794ZM615.457 5.61439C616.837 5.67245 618.002 4.60122 618.06 3.22173C618.118 1.84224 617.047 0.676873 615.667 0.618815L615.457 5.61439ZM661.384 10.4841C660.1 9.976 658.647 10.6049 658.139 11.8887C657.631 13.1725 658.26 14.6252 659.544 15.1332L661.384 10.4841ZM698.71 37.8476C699.795 38.7015 701.367 38.5141 702.221 37.4291C703.075 36.3441 702.887 34.7723 701.802 33.9184L698.71 37.8476ZM734.392 67.3376C733.564 66.2331 731.997 66.0094 730.892 66.8379C729.788 67.6664 729.564 69.2334 730.393 70.3379L734.392 67.3376ZM752.552 109.903C753.052 111.19 754.501 111.827 755.788 111.327C757.075 110.826 757.712 109.377 757.212 108.091L752.552 109.903ZM766.828 153.876C766.794 152.496 765.647 151.404 764.267 151.439C762.887 151.473 761.795 152.619 761.83 154L766.828 153.876ZM752.821 201.462C752.338 202.756 752.995 204.196 754.288 204.679C755.582 205.162 757.022 204.505 757.505 203.212L752.821 201.462ZM730.784 249.582C731.662 248.517 731.51 246.941 730.444 246.063C729.379 245.185 727.803 245.337 726.925 246.402L730.784 249.582ZM687.753 280.4C686.574 281.119 686.201 282.657 686.92 283.836C687.64 285.014 689.178 285.387 690.357 284.668L687.753 280.4ZM640.538 304.302C641.892 304.032 642.771 302.716 642.501 301.362C642.231 300.008 640.914 299.129 639.56 299.399L640.538 304.302ZM0 6.66595C6.90252 6.66595 13.4868 7.04651 19.7664 7.77522L20.3428 2.80855C13.8634 2.05666 7.08644 1.66595 0 1.66595V6.66595ZM57.8025 17.6633C70.4332 23.0863 81.3435 30.3004 90.7445 38.8162L94.1013 35.1106C84.3083 26.2396 72.9339 18.7186 59.7751 13.0689L57.8025 17.6633ZM115.55 69.2889C122.371 80.5801 127.759 92.7616 131.943 105.263L136.685 103.676C132.403 90.8814 126.869 78.3561 119.83 66.7037L115.55 69.2889ZM141.22 143.857C142.269 150.556 143.039 157.17 143.567 163.61L148.55 163.201C148.013 156.645 147.228 149.909 146.16 143.084L141.22 143.857ZM143.567 163.61C144.083 169.902 145.023 176.207 146.369 182.472L151.258 181.422C149.956 175.363 149.048 169.272 148.55 163.201L143.567 163.61ZM158.781 218.417C164.259 229.751 171.089 240.575 179.141 250.521L183.027 247.375C175.22 237.732 168.596 227.234 163.283 216.241L158.781 218.417ZM206.407 277.032C216.414 284.636 227.449 291.078 239.39 296.017L241.301 291.396C229.774 286.629 219.112 280.407 209.433 273.051L206.407 277.032ZM276.181 305.785C282.371 306.578 288.723 306.991 295.224 306.991V301.991C288.935 301.991 282.796 301.592 276.817 300.825L276.181 305.785ZM295.224 306.991C301.571 306.991 307.773 306.727 313.822 306.206L313.393 301.224C307.492 301.733 301.433 301.991 295.224 301.991V306.991ZM350.413 299.389C362.76 295.706 374.193 290.718 384.605 284.496L382.04 280.204C372.004 286.202 360.955 291.027 348.984 294.597L350.413 299.389ZM413.714 261.09C422.137 252.092 429.332 241.876 435.189 230.536L430.746 228.242C425.095 239.183 418.164 249.019 410.064 257.673L413.714 261.09ZM448.09 195.562C449.521 189.649 450.67 183.535 451.529 177.229L446.575 176.554C445.738 182.698 444.62 188.644 443.23 194.385L448.09 195.562ZM451.529 177.229C452.44 170.539 453.496 163.857 454.727 157.221L449.811 156.309C448.564 163.032 447.495 169.794 446.575 176.554L451.529 177.229ZM464.511 118.012C468.732 105.036 473.932 92.602 480.356 81.0389L475.985 78.6107C469.38 90.5002 464.059 103.237 459.756 116.465L464.511 118.012ZM504.015 48.7999C513.055 39.4767 523.54 31.3113 535.716 24.6219L533.308 20.2397C520.681 27.1772 509.801 35.6506 500.426 45.3193L504.015 48.7999ZM573.058 10.3358C579.329 8.80759 585.921 7.56932 592.851 6.64396L592.19 1.68794C585.092 2.63572 578.325 3.90598 571.874 5.47794L573.058 10.3358ZM592.851 6.64396C600.494 5.62343 608.042 5.3023 615.457 5.61439L615.667 0.618815C607.965 0.294626 600.125 0.628326 592.19 1.68794L592.851 6.64396ZM659.544 15.1332C673.631 20.7083 686.806 28.4795 698.71 37.8476L701.802 33.9184C689.548 24.2748 675.956 16.2509 661.384 10.4841L659.544 15.1332ZM730.393 70.3379C739.682 82.7216 747.198 96.1388 752.552 109.903L757.212 108.091C751.685 93.8817 743.941 80.0674 734.392 67.3376L730.393 70.3379ZM761.83 154C762.018 161.63 761.413 169.134 759.953 176.399L764.855 177.384C766.394 169.729 767.025 161.851 766.828 153.876L761.83 154ZM759.953 176.399C758.193 185.156 755.789 193.517 752.821 201.462L757.505 203.212C760.566 195.018 763.042 186.401 764.855 177.384L759.953 176.399ZM726.925 246.402C715.593 260.151 702.233 271.565 687.753 280.4L690.357 284.668C705.302 275.549 719.089 263.771 730.784 249.582L726.925 246.402ZM639.56 299.399C630.952 301.115 622.302 301.991 613.756 301.991V306.991C622.643 306.991 631.621 306.08 640.538 304.302L639.56 299.399Z"
+                fill="#456ECA" fill-opacity="0.4" />
+            </svg></div>
         </div>
-        <div class="tt t1"><svg xmlns="http://www.w3.org/2000/svg" width="746" height="308" viewBox="0 0 746 308" fill="none">
-          <path d="M157.572 3C107.85 3.86449 7.36993 31.632 3.22643 135.786C-1.95294 265.979 82.9888 298.138 128.049 303.325C173.11 308.512 236.816 303.844 290.164 231.745C311.173 178.709 299.48 182.34 303.63 135.786C307.434 93.1245 355.942 3 462.637 3C569.332 3 602.998 92.7344 608.695 162.24C614.393 231.745 672.92 303.325 757.861 303.325" stroke="#456ECA" stroke-opacity="0.4" stroke-width="5" stroke-linecap="round" stroke-dasharray="44 44"/>
-          </svg></div>
-      </div>
-        <div class="double_parts"><div class="part part3">
-          <div class="icon"><img src="assets/image/03.png" alt=""></div>
-          <div class="tit">Marketing of products</div>
-          <div class="spch">Through referral links or linking your store to the platform, start marketing to millions of
-            customers</div>
-        </div>
-        <div class="part part4">
-          <div class="icon"><img src="assets/image/04.png" alt=""></div>
-          <div class="tit">Earn commission</div>
-          <div class="spch">Earn commission on all orders received by the client</div>
-        </div>
-       <div class="tt t2"><svg xmlns="http://www.w3.org/2000/svg" width="767" height="323" viewBox="0 0 767 323" fill="none">
-        <path d="M0 1.66595C-1.38071 1.66595 -2.5 2.78524 -2.5 4.16595C-2.5 5.54666 -1.38071 6.66595 0 6.66595V1.66595ZM146.058 163.406L148.55 163.201L146.058 163.406ZM449.052 176.892L446.575 176.554L449.052 176.892ZM762.404 176.892L759.953 176.399L762.404 176.892ZM611.988 302.723C611.012 303.699 611.012 305.282 611.988 306.259L627.898 322.169C628.874 323.145 630.457 323.145 631.434 322.169C632.41 321.192 632.41 319.609 631.434 318.633L617.291 304.491L631.434 290.349C632.41 289.372 632.41 287.789 631.434 286.813C630.457 285.837 628.874 285.837 627.898 286.813L611.988 302.723ZM19.7664 7.77522C21.1379 7.93438 22.3788 6.95157 22.5379 5.58006C22.6971 4.20855 21.7143 2.96771 20.3428 2.80855L19.7664 7.77522ZM59.7751 13.0689C58.5064 12.5241 57.0363 13.1111 56.4916 14.3798C55.9469 15.6485 56.5338 17.1186 57.8025 17.6633L59.7751 13.0689ZM90.7445 38.8162C91.7678 39.7432 93.3488 39.6651 94.2757 38.6418C95.2027 37.6185 95.1246 36.0375 94.1013 35.1106L90.7445 38.8162ZM119.83 66.7037C119.116 65.5218 117.579 65.1425 116.397 65.8564C115.216 66.5703 114.836 68.1071 115.55 69.2889L119.83 66.7037ZM131.943 105.263C132.382 106.572 133.798 107.279 135.108 106.84C136.417 106.402 137.123 104.985 136.685 103.676L131.943 105.263ZM146.16 143.084C145.947 141.72 144.668 140.787 143.304 141C141.939 141.214 141.007 142.493 141.22 143.857L146.16 143.084ZM146.369 182.472C146.659 183.822 147.989 184.682 149.339 184.392C150.688 184.102 151.548 182.772 151.258 181.422L146.369 182.472ZM163.283 216.241C162.682 214.998 161.188 214.477 159.945 215.078C158.701 215.679 158.181 217.174 158.781 218.417L163.283 216.241ZM179.141 250.521C180.01 251.594 181.584 251.76 182.657 250.891C183.73 250.022 183.896 248.448 183.027 247.375L179.141 250.521ZM209.433 273.051C208.333 272.215 206.765 272.429 205.93 273.529C205.094 274.628 205.308 276.196 206.407 277.032L209.433 273.051ZM239.39 296.017C240.666 296.544 242.128 295.938 242.656 294.662C243.183 293.386 242.577 291.924 241.301 291.396L239.39 296.017ZM276.817 300.825C275.448 300.65 274.195 301.618 274.019 302.987C273.844 304.357 274.812 305.609 276.181 305.785L276.817 300.825ZM313.822 306.206C315.198 306.087 316.217 304.876 316.099 303.501C315.98 302.125 314.769 301.106 313.393 301.224L313.822 306.206ZM348.984 294.597C347.66 294.992 346.908 296.384 347.302 297.708C347.697 299.031 349.089 299.783 350.413 299.389L348.984 294.597ZM384.605 284.496C385.79 283.787 386.177 282.252 385.469 281.067C384.76 279.882 383.225 279.495 382.04 280.204L384.605 284.496ZM410.064 257.673C409.12 258.681 409.172 260.263 410.18 261.206C411.188 262.15 412.771 262.098 413.714 261.09L410.064 257.673ZM435.189 230.536C435.822 229.309 435.341 227.801 434.115 227.168C432.888 226.534 431.38 227.015 430.746 228.242L435.189 230.536ZM443.23 194.385C442.905 195.727 443.73 197.078 445.072 197.403C446.413 197.728 447.765 196.904 448.09 195.562L443.23 194.385ZM454.727 157.221C454.979 155.863 454.082 154.559 452.725 154.307C451.367 154.055 450.062 154.952 449.811 156.309L454.727 157.221ZM459.756 116.465C459.329 117.778 460.047 119.189 461.36 119.616C462.673 120.043 464.083 119.325 464.511 118.012L459.756 116.465ZM480.356 81.0389C481.026 79.832 480.591 78.31 479.385 77.6394C478.178 76.9689 476.656 77.4038 475.985 78.6107L480.356 81.0389ZM500.426 45.3193C499.464 46.3105 499.489 47.8932 500.48 48.8544C501.471 49.8156 503.054 49.7912 504.015 48.7999L500.426 45.3193ZM535.716 24.6219C536.926 23.9571 537.368 22.4372 536.703 21.2271C536.038 20.0169 534.518 19.5749 533.308 20.2397L535.716 24.6219ZM571.874 5.47794C570.533 5.80485 569.711 7.15732 570.037 8.49877C570.364 9.84023 571.717 10.6627 573.058 10.3358L571.874 5.47794ZM615.457 5.61439C616.837 5.67245 618.002 4.60122 618.06 3.22173C618.118 1.84224 617.047 0.676873 615.667 0.618815L615.457 5.61439ZM661.384 10.4841C660.1 9.976 658.647 10.6049 658.139 11.8887C657.631 13.1725 658.26 14.6252 659.544 15.1332L661.384 10.4841ZM698.71 37.8476C699.795 38.7015 701.367 38.5141 702.221 37.4291C703.075 36.3441 702.887 34.7723 701.802 33.9184L698.71 37.8476ZM734.392 67.3376C733.564 66.2331 731.997 66.0094 730.892 66.8379C729.788 67.6664 729.564 69.2334 730.393 70.3379L734.392 67.3376ZM752.552 109.903C753.052 111.19 754.501 111.827 755.788 111.327C757.075 110.826 757.712 109.377 757.212 108.091L752.552 109.903ZM766.828 153.876C766.794 152.496 765.647 151.404 764.267 151.439C762.887 151.473 761.795 152.619 761.83 154L766.828 153.876ZM752.821 201.462C752.338 202.756 752.995 204.196 754.288 204.679C755.582 205.162 757.022 204.505 757.505 203.212L752.821 201.462ZM730.784 249.582C731.662 248.517 731.51 246.941 730.444 246.063C729.379 245.185 727.803 245.337 726.925 246.402L730.784 249.582ZM687.753 280.4C686.574 281.119 686.201 282.657 686.92 283.836C687.64 285.014 689.178 285.387 690.357 284.668L687.753 280.4ZM640.538 304.302C641.892 304.032 642.771 302.716 642.501 301.362C642.231 300.008 640.914 299.129 639.56 299.399L640.538 304.302ZM0 6.66595C6.90252 6.66595 13.4868 7.04651 19.7664 7.77522L20.3428 2.80855C13.8634 2.05666 7.08644 1.66595 0 1.66595V6.66595ZM57.8025 17.6633C70.4332 23.0863 81.3435 30.3004 90.7445 38.8162L94.1013 35.1106C84.3083 26.2396 72.9339 18.7186 59.7751 13.0689L57.8025 17.6633ZM115.55 69.2889C122.371 80.5801 127.759 92.7616 131.943 105.263L136.685 103.676C132.403 90.8814 126.869 78.3561 119.83 66.7037L115.55 69.2889ZM141.22 143.857C142.269 150.556 143.039 157.17 143.567 163.61L148.55 163.201C148.013 156.645 147.228 149.909 146.16 143.084L141.22 143.857ZM143.567 163.61C144.083 169.902 145.023 176.207 146.369 182.472L151.258 181.422C149.956 175.363 149.048 169.272 148.55 163.201L143.567 163.61ZM158.781 218.417C164.259 229.751 171.089 240.575 179.141 250.521L183.027 247.375C175.22 237.732 168.596 227.234 163.283 216.241L158.781 218.417ZM206.407 277.032C216.414 284.636 227.449 291.078 239.39 296.017L241.301 291.396C229.774 286.629 219.112 280.407 209.433 273.051L206.407 277.032ZM276.181 305.785C282.371 306.578 288.723 306.991 295.224 306.991V301.991C288.935 301.991 282.796 301.592 276.817 300.825L276.181 305.785ZM295.224 306.991C301.571 306.991 307.773 306.727 313.822 306.206L313.393 301.224C307.492 301.733 301.433 301.991 295.224 301.991V306.991ZM350.413 299.389C362.76 295.706 374.193 290.718 384.605 284.496L382.04 280.204C372.004 286.202 360.955 291.027 348.984 294.597L350.413 299.389ZM413.714 261.09C422.137 252.092 429.332 241.876 435.189 230.536L430.746 228.242C425.095 239.183 418.164 249.019 410.064 257.673L413.714 261.09ZM448.09 195.562C449.521 189.649 450.67 183.535 451.529 177.229L446.575 176.554C445.738 182.698 444.62 188.644 443.23 194.385L448.09 195.562ZM451.529 177.229C452.44 170.539 453.496 163.857 454.727 157.221L449.811 156.309C448.564 163.032 447.495 169.794 446.575 176.554L451.529 177.229ZM464.511 118.012C468.732 105.036 473.932 92.602 480.356 81.0389L475.985 78.6107C469.38 90.5002 464.059 103.237 459.756 116.465L464.511 118.012ZM504.015 48.7999C513.055 39.4767 523.54 31.3113 535.716 24.6219L533.308 20.2397C520.681 27.1772 509.801 35.6506 500.426 45.3193L504.015 48.7999ZM573.058 10.3358C579.329 8.80759 585.921 7.56932 592.851 6.64396L592.19 1.68794C585.092 2.63572 578.325 3.90598 571.874 5.47794L573.058 10.3358ZM592.851 6.64396C600.494 5.62343 608.042 5.3023 615.457 5.61439L615.667 0.618815C607.965 0.294626 600.125 0.628326 592.19 1.68794L592.851 6.64396ZM659.544 15.1332C673.631 20.7083 686.806 28.4795 698.71 37.8476L701.802 33.9184C689.548 24.2748 675.956 16.2509 661.384 10.4841L659.544 15.1332ZM730.393 70.3379C739.682 82.7216 747.198 96.1388 752.552 109.903L757.212 108.091C751.685 93.8817 743.941 80.0674 734.392 67.3376L730.393 70.3379ZM761.83 154C762.018 161.63 761.413 169.134 759.953 176.399L764.855 177.384C766.394 169.729 767.025 161.851 766.828 153.876L761.83 154ZM759.953 176.399C758.193 185.156 755.789 193.517 752.821 201.462L757.505 203.212C760.566 195.018 763.042 186.401 764.855 177.384L759.953 176.399ZM726.925 246.402C715.593 260.151 702.233 271.565 687.753 280.4L690.357 284.668C705.302 275.549 719.089 263.771 730.784 249.582L726.925 246.402ZM639.56 299.399C630.952 301.115 622.302 301.991 613.756 301.991V306.991C622.643 306.991 631.621 306.08 640.538 304.302L639.56 299.399Z" fill="#456ECA" fill-opacity="0.4"/>
-      </svg></div>
-      </div>
-        
+
         <div class="t"><img src="assets/image/cercle_flech.png" alt=""></div>
       </div>
 
@@ -162,11 +171,15 @@
     <div class="sponsor ">
       <div class="spnr-title">Reach More Buyers: Link Your Store to Multiple Platforms</div>
       <div class="sponsors">
-        <div class="double-spn"><div class="spn"><img src="assets/image/shopify.png" alt=""></div>
-        <div class="spn"><img src="assets/image/youcan.png" alt=""></div></div>
-        <div class="double-spn"> <div class="spn"><img src="assets/image/wooco.png" alt=""></div>
-        <div class="spn"><img src="assets/image/leadp.png" alt=""></div></div>
-       
+        <div class="double-spn">
+          <div class="spn"><img src="assets/image/shopify.png" alt=""></div>
+          <div class="spn"><img src="assets/image/youcan.png" alt=""></div>
+        </div>
+        <div class="double-spn">
+          <div class="spn"><img src="assets/image/wooco.png" alt=""></div>
+          <div class="spn"><img src="assets/image/leadp.png" alt=""></div>
+        </div>
+
       </div>
     </div>
 
@@ -220,7 +233,7 @@
             </div>
           </div>
         </div>
-        <div class="qsts hidden" >
+        <div class="qsts hidden">
 
           <div class="question-answer" onclick="toggleHeight(this)">
             <div class="question">
@@ -264,9 +277,10 @@
           </div>
         </div>
 
-       
 
-      </div> <div class="showmore"><button id="toggleButton">Show More</button></div>
+
+      </div>
+      <div class="showmore"><button id="toggleButton">Show More</button></div>
     </div>
     <div class="joinus flex-container">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -314,93 +328,39 @@
       <div class="copyright"> Copyright © 2023 All rights reserved | <a>FGAFFILIATE</a></div>
     </div>
   </div>
+ <form id="myForm"   >
+    <div class="screen1 screen">
+      <div class="navbar ">
 
-  <div class="screen1 screen">
-    <div class="navbar ">
-
-      <div class="logo" onclick="goback()"><img src="assets/svg/logo text 2.svg" alt=""></div>
-      <div class="nav_links">
-        <div class="frst">Join us today!</div>
-        <div class="scnd">Create you account</div>
-      </div>
-
-      <div class="nav_buttons">
-        <div class="btn2"><button onclick="switchLanguage()">AR</button></div>
-      </div>
-    </div>
-
-    <div class="table">
-      <div class="steps">
-        <img src="assets/image/step1.png" alt="">
-      </div>
-      <div class="infos">
-        <div class="tit">Enter your personal information</div>
-        <div class="details">
-          <div class="info">
-            <div class="nm-tel">
-              <div class="nm"><input type="text" placeholder="Your name"></div>
-              <div class="tel"><input type="text" placeholder="Your phone"></div>
-            </div>
-            <div class="eml"><input type="email" placeholder="Your email"></div>
-            <div class="joinas">
-              <div class="joinaschoices joinaschoices1">
-                <div class="inp">Join as ...</div>
-                <div class="flech"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12"
-                    fill="none">
-                    <path d="M2 1.5L11 10.5L20 1.5" stroke="#E3E3E3" stroke-width="2.29" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-              <div class="joinasdropdown joinasdropdown1">
-                <div class="choix choix1">Affiliate</div>
-                <div class="choix choix2">Seller</div>
-
-              </div>
-
-
-            </div>
-          </div>
+        <div class="logo" onclick="goback()"><img src="assets/svg/logo text 2.svg" alt=""></div>
+        <div class="nav_links">
+          <div class="frst">Join us today!</div>
+          <div class="scnd">Create you account</div>
         </div>
-        <div class="btns">
-          <div class="btn1"><button>Back</button></div>
-          <div class="btn3"><button onclick="next1()">Next</button></div>
+
+        <div class="nav_buttons">
+          <div class="btn2"><button type="button" onclick="switchLanguage()">AR</button></div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="screen2 screen21 screen">
-    <div class="navbar ">
 
-      <div class="logo" onclick="goback()"><img src="assets/svg/logo text 2.svg" alt=""></div>
-      <div class="nav_links">
-        <div class="frst">Join us today!</div>
-        <div class="scnd">Create you account</div>
-      </div>
-
-      <div class="nav_buttons">
-        <div class="btn2"><button onclick="switchLanguage()">AR</button></div>
-      </div>
-    </div>
-
-    <div class="table">
-      <div class="steps">
-        <img src="assets/image/step2.png" alt="">
-      </div>
-      <div class="infos">
-        <div class="tit">Answer these questions</div>
-        <div class="details">
-          <div class="info">
-
-            <div class="detail-inplabel">
-              <div class="label">What is your Monthly budget for ads ? *</div>
-              <div class="inp"><input type="text" placeholder="Your budget (USD)"></div>
-            </div>
-            <div class="detail-inplabel">
-              <div class="label">What is your average daily order?</div>
+      <div class="table">
+        <div class="steps">
+          <img src="assets/image/step1.png" alt="">
+        </div>
+        <div class="infos">
+          <div class="tit">Enter your personal information</div>
+          <div class="details">
+            <div class="info">
+              <div class="nm-tel">
+                <div class="nm"><input id="nameInput" type="text" placeholder="Your name" name="nom"></div>
+                <div class="tel"><input id="phoneInput" type="text" placeholder="Your phone" name="phone"></div>
+              </div>
+              <div class="eml"><input id="emailInput" type="email" placeholder="Your email" name="email"></div>
               <div class="joinas">
-                <div class="joinaschoices joinaschoices2">
-                  <div class="inp">Average daily order...</div>
+                <div class="joinaschoices joinaschoices1">
+                  <div class="inp" id="joinAsInput">Join as ...</div>
+                  <input type="hidden" id="hiddenInput" name="joinas">
+
                   <div class="flech"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12"
                       fill="none">
                       <path d="M2 1.5L11 10.5L20 1.5" stroke="#E3E3E3" stroke-width="2.29" stroke-linecap="round"
@@ -408,253 +368,314 @@
                     </svg>
                   </div>
                 </div>
-                <div class="joinasdropdown joinasdropdown2">
-                  <div class="choix choix1">0</div>
-                  <div class="choix choix2">10-15</div>
-                  <div class="choix choix3">50-100</div>
-                  <div class="choix choix4">100-500</div>
-                  <div class="choix choix5">500+</div>
+                <div class="joinasdropdown joinasdropdown1">
+                  <div class="choix choix1">Affiliate</div>
+                  <div class="choix choix2">Seller</div>
 
                 </div>
 
 
               </div>
-
-
             </div>
-            <div class="detail-inplabel">
-              <div class="label">Which affiliate networks you're working with currently ? *</div>
-              <div class="inp"><input type="text" placeholder="(codenetwork, ninjasellers...)"></div>
-            </div>
-
           </div>
           <div class="btns">
-            <div class="btn1"><button onclick="back1()">Back</button></div>
-            <div class="btn3"><button onclick="next2()">Next</button></div>
+            <div class="btn1"><button type="button">Back</button></div>
+            <div class="btn3"><button type="button" onclick="next1()" >Next</button></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="screen2 screen211 screen">
-    <div class="navbar ">
+    <div class="screen2 screen21 screen">
+      <div class="navbar ">
 
-      <div class="logo" onclick="goback()"><img src="assets/svg/logo text 2.svg" alt=""></div>
-      <div class="nav_links">
-        <div class="frst">Join us today!</div>
-        <div class="scnd">Create you account</div>
+        <div class="logo" onclick="goback()"><img src="assets/svg/logo text 2.svg" alt=""></div>
+        <div class="nav_links">
+          <div class="frst">Join us today!</div>
+          <div class="scnd">Create you account</div>
+        </div>
+
+        <div class="nav_buttons">
+          <div class="btn2"><button type="button"  onclick="switchLanguage()">AR</button></div>
+        </div>
       </div>
 
-      <div class="nav_buttons">
-        <div class="btn2"><button onclick="switchLanguage()">AR</button></div>
-      </div>
-    </div>
+      <div class="table">
+        <div class="steps">
+          <img src="assets/image/step2.png" alt="">
+        </div>
+        <div class="infos">
+          <div class="tit">Answer these questions</div>
+          <div class="details">
+            <div class="info">
 
-    <div class="table">
-      <div class="steps">
-        <img src="assets/image/step3.png" alt="">
-      </div>
-      <div class="infos">
-        <div class="tit">Answer these questions</div>
-        <div class="details">
-          <div class="info">
+              <div class="detail-inplabel">
+                <div class="label">What is your Monthly budget for ads ? *</div>
+                <div class="inp"><input name="monthly-budget" type="text" placeholder="Your budget (USD)"></div>
+              </div>
+              <div class="detail-inplabel">
+                <div class="label">What is your average daily order?</div>
+                <div class="joinas">
+                  <div class="joinaschoices joinaschoices2">
+                    <div class="inp">Average daily order...</div>
+                    <input type="hidden" id="hiddenInput2" name="averagedailyorder">
 
-            <div class="detail-inplabel">
-              <div class="label">Which country you are selling in ? *</div>
-              <div class="inp"><input type="text" placeholder="The country"></div>
-            </div>
-            <div class="detail-inplabel">
-              <div class="label">Do you have any experience in internet marketing? *</div>
-              <div class="radio">
+                    <div class="flech"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="12"
+                        viewBox="0 0 22 12" fill="none">
+                        <path d="M2 1.5L11 10.5L20 1.5" stroke="#E3E3E3" stroke-width="2.29" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="joinasdropdown joinasdropdown2">
+                    <div class="choix choix1">0</div>
+                    <div class="choix choix2">10-15</div>
+                    <div class="choix choix3">50-100</div>
+                    <div class="choix choix4">100-500</div>
+                    <div class="choix choix5">500+</div>
 
-                <div class="t">
-                  <div class="radlabel"><input type="radio" name="agree" value="yes"></div>
-                  <div class="radinpt">Yes</div>
+                  </div>
+
+
                 </div>
-                <div class="t">
-                  <div class="radlabel"><input type="radio" name="agree" value="no"></div>
-                  <div class="radinpt">No</div>
-                </div>
-
-
 
 
               </div>
+              <div class="detail-inplabel">
+                <div class="label">Which affiliate networks you're working with currently ? *</div>
+                <div class="inp"><input type="text" placeholder="(codenetwork, ninjasellers...)" name="affiliatenetworks"></div>
+              </div>
 
             </div>
-            <div class="detail-inplabel">
-              <div class="label">Do you have any other questions? *</div>
-              <div class="inp"><input type="text" placeholder="..."></div>
+            <div class="btns">
+              <div class="btn1"><button type="button" onclick="back1()">Back</button></div>
+              <div class="btn3"><button type="button" onclick="next2()">Next</button></div>
             </div>
-
-          </div>
-          <div class="btns">
-            <div class="btn1"><button onclick="back2()">Back</button></div>
-            <div class="btn3"><button onclick="next3()">Next</button></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="screen2 screen22 screen">
-    <div class="navbar ">
+    <div class="screen2 screen211 screen">
+      <div class="navbar ">
 
-      <div class="logo" onclick="goback()"><img src="assets/svg/logo text 2.svg" alt=""></div>
-      <div class="nav_links">
-        <div class="frst">Join us today!</div>
-        <div class="scnd">Create you account</div>
+        <div class="logo" onclick="goback()"><img src="assets/svg/logo text 2.svg" alt=""></div>
+        <div class="nav_links">
+          <div class="frst">Join us today!</div>
+          <div class="scnd">Create you account</div>
+        </div>
+
+        <div class="nav_buttons">
+          <div class="btn2"><button type="button" onclick="switchLanguage()">AR</button></div>
+        </div>
       </div>
 
-      <div class="nav_buttons">
-        <div class="btn2"><button onclick="switchLanguage()">AR</button></div>
+      <div class="table">
+        <div class="steps">
+          <img src="assets/image/step3.png" alt="">
+        </div>
+        <div class="infos">
+          <div class="tit">Answer these questions</div>
+          <div class="details">
+            <div class="info">
+
+              <div class="detail-inplabel">
+                <div class="label">Which country you are selling in ? *</div>
+                <div class="inp"><input type="text" placeholder="The country" name="country"></div>
+              </div>
+              <div class="detail-inplabel">
+                <div class="label">Do you have any experience in internet marketing? *</div>
+                <div class="radio">
+
+                  <div class="t">
+                    <div class="radlabel"><input type="radio" name="agree" value="yes"></div>
+                    <div class="radinpt">Yes</div>
+                  </div>
+                  <div class="t">
+                    <div class="radlabel"><input type="radio" name="agree" value="no"></div>
+                    <div class="radinpt">No</div>
+                  </div>
+
+
+
+
+                </div>
+
+              </div>
+              <div class="detail-inplabel">
+                <div class="label">Do you have any other questions? *</div>
+                <div class="inp"><input type="text" placeholder="..." name="otherquestion"></div>
+              </div>
+
+            </div>
+            <div class="btns">
+              <div class="btn1"><button type="button" onclick="back2()">Back</button></div>
+              <div class="btn3"><button type="submit" onclick="submitForm(event) ">Next</button></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="screen2 screen22 screen">
+      <div class="navbar ">
 
-    <div class="table">
-      <div class="steps">
-        <img src="assets/image/step2.png" alt="">
+        <div class="logo" onclick="goback()"><img src="assets/svg/logo text 2.svg" alt=""></div>
+        <div class="nav_links">
+          <div class="frst">Join us today!</div>
+          <div class="scnd">Create you account</div>
+        </div>
+
+        <div class="nav_buttons">
+          <div class="btn2"><button type="button" onclick="switchLanguage()">AR</button></div>
+        </div>
       </div>
-      <div class="infos">
-        <div class="tit">Answer these questions</div>
-        <div class="details">
-          <div class="info">
-            <div class="detail-inplabel">
-              <div class="label">What is your company name? </div>
-              <div class="inp"><input type="text" placeholder="Company (optional)"></div>
-            </div>
-            <div class="detail-inplabel">
 
-              <div class="joinas">
-                <div class="joinaschoices joinaschoices3">
-                  <div class="inp">Average daily order...</div>
-                  <div class="flech"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12"
-                      fill="none">
-                      <path d="M2 1.5L11 10.5L20 1.5" stroke="#E3E3E3" stroke-width="2.29" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg>
+      <div class="table">
+        <div class="steps">
+          <img src="assets/image/step2.png" alt="">
+        </div>
+        <div class="infos">
+          <div class="tit">Answer these questions</div>
+          <div class="details">
+            <div class="info">
+              <div class="detail-inplabel">
+                <div class="label">What is your company name? </div>
+                <div class="inp"><input type="text" placeholder="Company (optional)" name="companyname"></div>
+              </div>
+              <div class="detail-inplabel">
+
+                <div class="joinas">
+                  <div class="joinaschoices joinaschoices3">
+                    <div class="inp">Average daily order...</div>
+                    <input type="hidden" id="hiddenInput3" name="aaveragedailyOrder">
+                    <div class="flech"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="12"
+                        viewBox="0 0 22 12" fill="none">
+                        <path d="M2 1.5L11 10.5L20 1.5" stroke="#E3E3E3" stroke-width="2.29" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="joinasdropdown joinasdropdown3">
+                    <div class="choix choix1">0</div>
+                    <div class="choix choix2">10-15</div>
+                    <div class="choix choix3">50-100</div>
+                    <div class="choix choix4">100-500</div>
+                    <div class="choix choix5">500+</div>
+
+                  </div>
+
+
+                </div>
+
+
+              </div>
+              <div class="detail-inplabel">
+
+                <div class="joinas">
+                  <div class="joinaschoices joinaschoices4">
+                    <div class="inp">Select a country</div>
+                    <input type="hidden" id="hiddenInput4" name="SellerCountry">
+
+                    <div class="flech"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="12"
+                        viewBox="0 0 22 12" fill="none">
+                        <path d="M2 1.5L11 10.5L20 1.5" stroke="#E3E3E3" stroke-width="2.29" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="joinasdropdown joinasdropdown4">
+                    <div class="choix choix1">Senegal</div>
+                    <div class="choix choix2">Ivory coast</div>
+                    <div class="choix choix3">Mozambique</div>
+                    <div class="choix choix4">Gabon</div>
+                    <div class="choix choix5">Tunisia</div>
+                    <div class="choix choix6">Libya</div>
+                    <div class="choix choix7">Algeria</div>
+                    <div class="choix choix8">Benin</div>
+                    <div class="choix choix9">Togo</div>
+                    <div class="choix choix10">Angola</div>
+                    <div class="choix choix11">South africa</div>
+                    <div class="choix choix12">Romania</div>
+                    <div class="choix choix13">Chad</div>
+
+                  </div>
+
+
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="btns">
+              <div class="btn1"><button type="button" onclick="back1()">Back</button></div>
+              <div class="btn3"><button type="button" onclick="next21()">Next</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen2 screen222 screen">
+      <div class="navbar ">
+
+        <div class="logo" onclick="goback()"><img src="assets/svg/logo text 2.svg" alt=""></div>
+        <div class="nav_links">
+          <div class="frst">Join us today!</div>
+          <div class="scnd">Create you account</div>
+        </div>
+
+        <div class="nav_buttons">
+          <div class="btn2"><button type="button" onclick="switchLanguage()">AR</button></div>
+        </div>
+      </div>
+
+      <div class="table">
+        <div class="steps">
+          <img src="assets/image/step3.png" alt="">
+        </div>
+        <div class="infos">
+          <div class="tit">Answer these questions</div>
+          <div class="details">
+            <div class="info">
+              <div class="detail-inplabel">
+                <div class="label">Do you have any experience in affiliate marketing? *</div>
+                <div class="radio">
+
+                  <div class="t">
+                    <div class="radlabel"><input type="radio" name="agre" value="yes"></div>
+                    <div class="radinpt">Yes</div>
+                  </div>
+                  <div class="t">
+                    <div class="radlabel"><input type="radio" name="agre" value="no"></div>
+                    <div class="radinpt">No</div>
                   </div>
                 </div>
-                <div class="joinasdropdown joinasdropdown3">
-                  <div class="choix choix1">0</div>
-                  <div class="choix choix2">10-15</div>
-                  <div class="choix choix3">50-100</div>
-                  <div class="choix choix4">100-500</div>
-                  <div class="choix choix5">500+</div>
-
-                </div>
-
 
               </div>
 
-
-            </div>
-            <div class="detail-inplabel">
-
-              <div class="joinas">
-                <div class="joinaschoices joinaschoices4">
-                  <div class="inp">Select a country</div>
-                  <div class="flech"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12"
-                      fill="none">
-                      <path d="M2 1.5L11 10.5L20 1.5" stroke="#E3E3E3" stroke-width="2.29" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="joinasdropdown joinasdropdown4">
-                  <div class="choix choix1">Senegal</div>
-                  <div class="choix choix2">Ivory coast</div>
-                  <div class="choix choix3">Mozambique</div>
-                  <div class="choix choix4">Gabon</div>
-                  <div class="choix choix5">Tunisia</div>
-                  <div class="choix choix6">Libya</div>
-                  <div class="choix choix7">Algeria</div>
-                  <div class="choix choix8">Benin</div>
-                  <div class="choix choix9">Togo</div>
-                  <div class="choix choix10">Angola</div>
-                  <div class="choix choix11">South africa</div>
-                  <div class="choix choix12">Romania</div>
-                  <div class="choix choix13">Chad</div>
-
-                </div>
-
-
+              <div class="detail-inplabel">
+                <div class="label">Mention some affiliate network you worked with</div>
+                <div class="inp"><input type="text" placeholder="(codenetwork, ninjasellers...)" name="affiliatenetwork"></div>
+              </div>
+              <div class="detail-inplabel">
+                <div class="label">What’s your monthly budget for ads?</div>
+                <div class="inp"><input type="text" placeholder="The budget" name="monthlybudget"></div>
               </div>
 
-
+              <div class="detail-inplabel detail-inplabel2">
+                <div class="label"><input type="checkbox"></div>
+                <div class="inp inp2">I agree with the processing of personal data*</div>
+              </div>
             </div>
+
+
           </div>
-
           <div class="btns">
-            <div class="btn1"><button onclick="back1()">Back</button></div>
-            <div class="btn3"><button onclick="next21()">Next</button></div>
+            <div class="btn1"><button type="button" onclick="back21()">Back</button></div>
+            <div class="btn3"><button type="submit" onclick="submitForm(event)">Next</button></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="screen2 screen222 screen">
-    <div class="navbar ">
-
-      <div class="logo" onclick="goback()"><img src="assets/svg/logo text 2.svg" alt=""></div>
-      <div class="nav_links">
-        <div class="frst">Join us today!</div>
-        <div class="scnd">Create you account</div>
-      </div>
-
-      <div class="nav_buttons">
-        <div class="btn2"><button onclick="switchLanguage()">AR</button></div>
-      </div>
-    </div>
-
-    <div class="table">
-      <div class="steps">
-        <img src="assets/image/step3.png" alt="">
-      </div>
-      <div class="infos">
-        <div class="tit">Answer these questions</div>
-        <div class="details">
-          <div class="info">
-            <div class="detail-inplabel">
-              <div class="label">Do you have any experience in affiliate marketing? *</div>
-              <div class="radio">
-
-                <div class="t">
-                  <div class="radlabel"><input type="radio" name="agre" value="yes"></div>
-                  <div class="radinpt">Yes</div>
-                </div>
-                <div class="t">
-                  <div class="radlabel"><input type="radio" name="agre" value="no"></div>
-                  <div class="radinpt">No</div>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="detail-inplabel">
-              <div class="label">Mention some affiliate network you worked with</div>
-              <div class="inp"><input type="text" placeholder="(codenetwork, ninjasellers...)"></div>
-            </div>
-            <div class="detail-inplabel">
-              <div class="label">What’s your monthly budget for ads?</div>
-              <div class="inp"><input type="text" placeholder="The budget"></div>
-            </div>
-
-            <div class="detail-inplabel detail-inplabel2">
-              <div class="label"><input type="checkbox"></div>
-              <div class="inp inp2">I agree with the processing of personal data*</div>
-            </div>
-          </div>
-
-
-        </div>
-        <div class="btns">
-          <div class="btn1"><button onclick="back21()">Back</button></div>
-          <div class="btn3"><button onclick="next3()">Next</button></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
+  </form>
   <div class="screen2 screen_last screen">
     <div class="navbar ">
 
@@ -665,7 +686,7 @@
       </div>
 
       <div class="nav_buttons">
-        <div class="btn2"><button onclick="switchLanguage()">AR</button></div>
+        <div class="btn2"><button type="button" onclick="switchLanguage()">AR</button></div>
       </div>
     </div>
 

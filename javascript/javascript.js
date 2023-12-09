@@ -133,80 +133,117 @@ backToTopButton.addEventListener("click", () => {
 });
 
 function setupDropdownListeners(
-  choicesClass,
-  dropdownClass,
   choicesSelector,
-  updateFunction
+  dropdownSelector,
+  updateFunction,
+  hiddenInputId
 ) {
-  document.querySelector(choicesClass).addEventListener("click", function () {
-    var dropdown = document.querySelector(dropdownClass);
-    dropdown.style.display =
-      dropdown.style.display === "none" || dropdown.style.display === ""
-        ? "block"
-        : "none";
-  });
+  document
+    .querySelector(choicesSelector)
+    .addEventListener("click", function () {
+      var dropdown = document.querySelector(dropdownSelector);
+
+      dropdown.style.display =
+        dropdown.style.display === "none" || dropdown.style.display === ""
+          ? "block"
+          : "none";
+    });
 
   document
-    .querySelectorAll(`${dropdownClass} ${choicesSelector}`)
+    .querySelectorAll(`${dropdownSelector} .choix`)
     .forEach(function (choix) {
       choix.addEventListener("click", function () {
-        var flech = document.querySelector(`${choicesClass} .flech`);
+        var flech = document.querySelector(`${choicesSelector} .flech`);
         flech.classList.remove("rotate");
         updateFunction(choix.textContent);
         joinastype = choix.textContent;
+        if (hiddenInputId) {
+          var hiddenInput = document.getElementById(hiddenInputId);
+          hiddenInput.value = joinastype;
+        }
       });
     });
 }
 
-function updateJoinAs(type, choicesClass, dropdownClass) {
-  document.querySelector(`${choicesClass} .inp`).textContent = type;
-  var dropdown = document.querySelector(dropdownClass);
+function updateJoinAs(type, choicesSelector, dropdownSelector) {
+  document.querySelector(`${choicesSelector} .inp`).textContent = type;
+  var dropdown = document.querySelector(dropdownSelector);
   dropdown.style.display =
     dropdown.style.display === "none" || dropdown.style.display === ""
       ? "block"
       : "none";
 }
 
+// Setup for the first dropdown
 setupDropdownListeners(
   ".joinaschoices1",
   ".joinasdropdown1",
-  ".choix",
   function (type) {
     updateJoinAs(type, ".joinaschoices1", ".joinasdropdown1");
-  }
+  },
+  "hiddenInput"
 );
 
+// Setup for the second dropdown
 setupDropdownListeners(
   ".joinaschoices2",
   ".joinasdropdown2",
-  ".choix",
   function (type) {
     updateJoinAs(type, ".joinaschoices2", ".joinasdropdown2");
-  }
+  },
+  "hiddenInput2"
 );
 
+// Setup for the third dropdown
 setupDropdownListeners(
   ".joinaschoices3",
   ".joinasdropdown3",
-  ".choix",
   function (type) {
     updateJoinAs(type, ".joinaschoices3", ".joinasdropdown3");
-  }
+  },
+  "hiddenInput3"
 );
 
+// Setup for the fourth dropdown
 setupDropdownListeners(
   ".joinaschoices4",
   ".joinasdropdown4",
-  ".choix",
   function (type) {
     updateJoinAs(type, ".joinaschoices4", ".joinasdropdown4");
-  }
+  },
+  "hiddenInput4"
 );
 
 document.querySelectorAll(".joinaschoices").forEach(function (joinaschoice) {
   joinaschoice.addEventListener("click", function () {
     var flech = joinaschoice.querySelector(".flech");
-
     flech.classList.toggle("rotate");
   });
 });
+
+function submitForm(event) {
+  event.preventDefault();
+  const content = document.querySelector(".screen_last");
+  content.style.transform = "translateX(0%)";
+  const formData = new FormData(document.getElementById("myForm"));
+
+  const submitUrl =
+    "https://script.google.com/macros/s/AKfycbwvBiqdizL-YWHgdAOlzYwHce8VQyk0BU6geZvJ-S16D8Ntzj2VDkuxfJM70yTH-ApAew/exec";
+
+  fetch(submitUrl, {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log("Form submitted successfully:", data);
+    })
+    .catch((error) => {
+      console.error("Error submitting form:", error);
+    });
+}
