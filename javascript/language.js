@@ -383,9 +383,6 @@ function switchLanguage() {
     completionScreenTranslations[currentLanguage].frst;
   navbar6.querySelector(".scnd").textContent =
     completionScreenTranslations[currentLanguage].scnd;
-  container_final.querySelector(".tit").textContent =
-    completionScreenTranslations[currentLanguage].tit;
-
   const container5 = document.querySelector(".screen222");
   const navbar5 = container5.querySelector(".navbar");
   navbar5.querySelector(".frst").textContent =

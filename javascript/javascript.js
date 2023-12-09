@@ -50,6 +50,19 @@ function next1() {
   const content1 = document.querySelector(".screen21");
   const content2 = document.querySelector(".screen22");
   const test = document.querySelector(".joinaschoices1 .inp").textContent;
+  const one = document.getElementById("nameInput");
+  const two = document.getElementById("phoneInput");
+  const three = document.getElementById("emailInput");
+
+  // Check if input fields are not empty
+  if (
+    one.value.trim() === "" ||
+    two.value.trim() === "" ||
+    three.value.trim() === ""
+  ) {
+    alert("Please fill in all the required fields");
+    return;
+  }
 
   if (test === "Affiliate" || test === "مسوق") {
     content1.style.transform = "translateX(0%)";
@@ -60,11 +73,33 @@ function next1() {
 
 function next2() {
   const content = document.querySelector(".screen211");
-  content.style.transform = "translateX(0%)";
+  const textContent = document.querySelector(
+    ".joinaschoices2 .inp"
+  ).textContent;
+
+  if (textContent !== "Average daily order...") {
+    content.style.transform = "translateX(0%)";
+  } else {
+    alert("Please enter a average daily order before proceeding.");
+  }
 }
 function next21() {
   const content = document.querySelector(".screen222");
-  content.style.transform = "translateX(0%)";
+  const textContent = document.querySelector(
+    ".joinaschoices3 .inp"
+  ).textContent;
+  const textContent2 = document.querySelector(
+    ".joinaschoices4 .inp"
+  ).textContent;
+
+  if (
+    textContent !== "Average daily order..." &&
+    textContent2 !== "Select a country"
+  ) {
+    content.style.transform = "translateX(0%)";
+  } else {
+    alert("Please enter a average daily order before proceeding.");
+  }
 }
 function next3() {
   const content = document.querySelector(".screen_last");
@@ -174,7 +209,6 @@ function updateJoinAs(type, choicesSelector, dropdownSelector) {
       : "none";
 }
 
-// Setup for the first dropdown
 setupDropdownListeners(
   ".joinaschoices1",
   ".joinasdropdown1",
@@ -184,7 +218,6 @@ setupDropdownListeners(
   "hiddenInput"
 );
 
-// Setup for the second dropdown
 setupDropdownListeners(
   ".joinaschoices2",
   ".joinasdropdown2",
@@ -194,7 +227,6 @@ setupDropdownListeners(
   "hiddenInput2"
 );
 
-// Setup for the third dropdown
 setupDropdownListeners(
   ".joinaschoices3",
   ".joinasdropdown3",
@@ -204,7 +236,6 @@ setupDropdownListeners(
   "hiddenInput3"
 );
 
-// Setup for the fourth dropdown
 setupDropdownListeners(
   ".joinaschoices4",
   ".joinasdropdown4",

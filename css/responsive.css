@@ -588,7 +588,7 @@
     }
     .parts{
         flex-direction: row;
-        animation: translateAnimation 19s linear infinite;
+        animation: translateAnimation 14s linear infinite;
         gap: 60px;
     }
     @keyframes translateAnimation {
@@ -598,9 +598,9 @@
         5.5% {
             transform: translateX(40%);
           }
-        11%{transform: translateX(20%);}
+        11%{transform: translateX(10%);}
         16.5% {
-            transform: translateX(20%);
+            transform: translateX(10%);
           }
         22%{
             transform: translateX(0%); 
@@ -623,27 +623,10 @@
         55%{
             transform: translateX(-40%);  
         }
-        60.5%{
-            transform: translateX(-20%);  
+        57.5%{
+            transform: translateX(40%);  
         }
-        66%{
-            transform: translateX(-20%);  
-        }
-        71.5%{
-            transform: translateX(0%);  
-        }
-        77%{
-            transform: translateX(0%); 
-        }
-        82.5%{
-            transform: translateX(20%); 
-        }
-        88% {
-            transform: translateX(20%);
-          }
-        93.5%{
-            transform: translateX(40%);
-        }  
+        
         100% {
           transform: translateX(40%);
         }
@@ -728,3 +711,108 @@
     }
    }
    
+   @media screen and (min-width : 1500px) {
+    :root{
+        --fz-xbig: 52px;
+    --fz-big: 42px;
+    
+   
+    }
+ }
+   @media screen and (min-width : 1650px) {
+    .qsts .question-answer {
+        max-width: 671px;
+    }
+    :root{
+        --fz-xbig: 54px;
+    --fz-big: 45px;
+    --fz-med: 26px;
+    --fz-small: 22px;
+    --fz-xsmall: 20px;
+    --fz-xxsmall: 18px;
+    }
+    .main-img img{
+         width: 600px;
+    }
+    .first_vue{
+        justify-content: center;
+       
+    }
+    .whyus_container .cards .card {
+     width: 400px;
+   }
+   .about-container .big-card{
+    max-width: 1400px;
+   }
+   .about-container .big-card img{
+    width: 530px;
+   }
+   .howitwork-container {
+    margin: 0px 160px;
+}
+.parts .part{
+  width: 300px;
+}
+.t img{
+    width: 1400px;
+}
+.joinus .joinus-card {
+    width: 1252px;
+    padding: 77px;
+}
+.questions-container .header .title {
+    max-width: 289px;
+}
+ }
+
+ @media screen and (min-width : 1750px) {
+    :root{
+        --fz-xbig: 60px;
+    --fz-big: 48px;
+    --fz-med: 26px;
+    --fz-small: 22px;
+    --fz-xsmall: 20px;
+    --fz-xxsmall: 18px;
+    }
+ }
+
+ @media screen and (min-width : 1800px) {
+    :root{
+        --fz-xbig: 64px;
+    --fz-big: 48px;
+    --fz-med: 26px;
+    --fz-small: 22px;
+    --fz-xsmall: 20px;
+    --fz-xxsmall: 18px;
+    }
+ }
+
+
+ @media screen and (min-width : 1850px) {
+    :root{
+        --fz-xbig: 68px;
+    --fz-big: 52px;
+    --fz-med: 26px;
+    --fz-small: 22px;
+    --fz-xsmall: 20px;
+    --fz-xxsmall: 18px;
+    }
+    .whyus_container .cards .card {
+        width: 500px;
+      }
+      .about-container .big-card{
+        max-width: 1700px;
+       }
+       .main-img img{
+        width: 650px;
+   }
+   .main{
+    margin-left: 50px;
+   }
+ }
+
+ @media screen and (min-width : 1850px) {
+    .first_vue{
+        margin: 0 auto;
+    }
+ }
