@@ -1,0 +1,53 @@
+:root {
+
+    --prm-color: #fff;
+    --scd-color: radial-gradient(399.45% 127.16% at -1.63% 4.01%, #3645DE 0%, #9595FF 100%);
+    --neutral-color: #FFA41B;
+    --btn-color2: #E2E8F0;
+    --text-color: black;
+    --ddc-color: #D6D0FF;
+
+
+    --fz-xbig: 48px;
+    --fz-big: 40px;
+    --fz-med: 24px;
+    --fz-small: 20px;
+    --fz-xsmall: 18px;
+    --fz-xxsmall: 16px;
+
+
+    --ff-bold: 'MADE TOMMY BOLD';
+    --ff-med: 'MADE TOMMY Medium';
+    --ff-reg: 'MADE TOMMY Regular';
+    --ff-small: 'MADE TOMMY Light';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+.stickky {
+    display: block;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.main-container {
+    transition: 1s all;
+
+}
+.rotate {
+    transform: rotate(180deg);
+}
+button {
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
