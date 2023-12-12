@@ -31,9 +31,7 @@
 body {
     position: relative;
 }
-.stickky {
-    display: block;
-}
+
 .overflow-hidden {
     overflow: hidden;
 }
