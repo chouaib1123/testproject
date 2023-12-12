@@ -577,7 +577,7 @@
         left: 50%;
         transform: translateX(-50%);
         margin: 0 auto;
-        top: 100%;
+        top: 130%;
     }
 
     .questions-container .header {
@@ -621,7 +621,7 @@
     }
 
     .info {
-        padding: 0;
+        padding: 0 30px;
     }
 
     .table .steps {
@@ -697,7 +697,16 @@
 }
 
 @media screen and (max-width:500px) {
+   .b{
+    display: block;
 
+   }
+   .a{
+    display: none;
+   }
+   .screen .navbar .logo img {
+    width: 45px;
+}
     .footer {
         margin-top: -50px;
     }

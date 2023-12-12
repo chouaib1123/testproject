@@ -372,8 +372,6 @@ function switchLanguage() {
     for (const div of allDivss) {
       div.style.textAlign = isArabic ? "right" : "left";
     }
-  } else {
-    div.style.textAlign = "center";
   }
 
   const allDivsss = questionsContainer.querySelectorAll(".question-answer");
