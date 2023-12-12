@@ -51,3 +51,12 @@ button {
 .hidden {
     display: none;
 }
+.btn3 button:hover{
+   background-color: #3645DE;
+}
+.btn3 button{
+    transition: 0.3s all;
+}
+.hidden2{
+    display: block;
+}

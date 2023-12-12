@@ -6,7 +6,7 @@ function submitForm(event) {
   const formData = new FormData(document.getElementById("myForm"));
 
   const submitUrl =
-    "https://script.google.com/macros/s/AKfycbwvBiqdizL-YWHgdAOlzYwHce8VQyk0BU6geZvJ-S16D8Ntzj2VDkuxfJM70yTH-ApAew/exec";
+    "https://script.google.com/macros/s/AKfycbwCiPIAhvrUMBm3WX2B8jYxXRW2nWM8fV0C32AM5eAXT-GrOAyZmExWCAHWD-CD5KSYPw/exec";
 
   fetch(submitUrl, {
     method: "POST",

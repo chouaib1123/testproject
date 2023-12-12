@@ -318,7 +318,7 @@
     position: absolute;
     content: "";
     top: -20px;
-    left: -10px;
+    left: -20px;
 }
 
 
@@ -426,7 +426,7 @@
 .qsts .question-answer .answer {
     font-size: var(--fz-small);
     font-family: var(--ff-small);
-    margin-top: 50px;
+    margin-top: 60px;
     width: 90%;
 }
 
@@ -502,7 +502,9 @@
     align-items: center;
     gap: 15px;
 }
-
+.footer a{
+    cursor: pointer;
+}
 .whatssap {
     display: flex;
     align-items: center;

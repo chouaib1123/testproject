@@ -372,6 +372,8 @@ function switchLanguage() {
     for (const div of allDivss) {
       div.style.textAlign = isArabic ? "right" : "left";
     }
+  } else {
+    div.style.textAlign = "center";
   }
 
   const allDivsss = questionsContainer.querySelectorAll(".question-answer");
@@ -446,6 +448,8 @@ function adjustDivStyle() {
   const allDivss = bigg.querySelectorAll("div");
   const containerDiv = document.querySelector(".first_vue_container");
   const dav = containerDiv.querySelector(".first_vue");
+  const main = dav.querySelector(".main");
+  const allDivs2 = main.querySelectorAll("div");
   const allDivs = dav.querySelectorAll("div");
   const problem = document.getElementById("details");
   const screenWidth =
@@ -453,7 +457,7 @@ function adjustDivStyle() {
     document.documentElement.clientWidth ||
     document.body.clientWidth;
 
-  if (screenWidth < 700) {
+  if (screenWidth <= 700) {
     problem.removeAttribute("style");
     allDivs.forEach((div) => div.removeAttribute("style"));
     allDivss.forEach((div) => div.removeAttribute("style"));
@@ -467,6 +471,8 @@ function adjustDivStyle() {
       problem.style.width = isArabic ? "auto" : "70%";
       allDivs.forEach((div) => {
         div.style.flexDirection = isArabic ? "row-reverse" : "row";
+      });
+      allDivs2.forEach((div) => {
         div.style.textAlign = isArabic ? "right" : "left";
       });
       for (const div of allDivss) {
@@ -489,7 +495,7 @@ document.addEventListener("DOMContentLoaded", function () {
     isArabic = currentLanguage === "ar";
 
     console.log(isArabic);
-    setToToggle.classList.toggle("hidden");
+    setToToggle.classList.toggle("hidden2");
     button.textContent = setToToggle.classList.contains("hidden")
       ? isArabic
         ? "اظهر المزيد"
