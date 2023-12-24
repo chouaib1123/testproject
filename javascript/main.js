@@ -971,7 +971,6 @@ function switchLanguage() {
     howItWorksTranslations[currentLanguage].part4.spch;
 
   const aboutContainer = document.querySelector(".about-container");
-  console.log("hello");
   aboutContainer.querySelector(".title").textContent =
     aboutTranslations[currentLanguage].title;
   aboutContainer.querySelector(".speech p").textContent =
