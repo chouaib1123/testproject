@@ -672,10 +672,26 @@ const succes = {
 const foundersTranslations = {
   ar: {
     title: "المؤسسين",
-    speech: "تعرف على مؤسسي الشركة  ",
+    tit1: "محمد الكطبي",
+    tit2: "أسامة الكطبي",
+    tit3: "توفيق سوطو",
+    tit4: "إيمان وخاش",
+    spch1: "المدير المالي",
+    spch2: "الرئيس التنفيذي",
+    spch3: "مدير التكنولوجيا",
+    spch4: "كبير مسؤولي التسويق",
+    speech: "تعرف على مؤسسين FG Affiliate",
   },
   en: {
     title: "Founders",
+    tit1: "Mohamed Guatbi",
+    tit2: "Oussama Guatbi",
+    tit3: "Toufik Souto",
+    tit4: "Imane Ouakhach",
+    spch1: "CFO",
+    spch2: "CEO",
+    spch3: "CTO",
+    spch4: "CMO",
     speech: "Meet the founders of FG Affiliate ",
   },
 };
@@ -708,6 +724,23 @@ function switchLanguage() {
     foundersTranslations[currentLanguage].title;
   container_founders.querySelector(".speech").textContent =
     foundersTranslations[currentLanguage].speech;
+  container_founders.querySelector(".tit:nth-child(1)").textContent =
+    foundersTranslations[currentLanguage].tit1;
+  container_founders.querySelector(".spch:nth-child(1)").textContent =
+    foundersTranslations[currentLanguage].spch1;
+  container_founders.querySelector(".tit:nth-child(2)").textContent =
+    foundersTranslations[currentLanguage].tit2;
+  container_founders.querySelector(".spch:nth-child(2)").textContent =
+    foundersTranslations[currentLanguage].spch2;
+  container_founders.querySelector(".tit:nth-child(3)").textContent =
+    foundersTranslations[currentLanguage].tit3;
+  container_founders.querySelector(".spch:nth-child(3)").textContent =
+    foundersTranslations[currentLanguage].spch3;
+  container_founders.querySelector(".tit:nth-child(4)").textContent =
+    foundersTranslations[currentLanguage].tit4;
+  container_founders.querySelector(".spch:nth-child(4)").textContent =
+    foundersTranslations[currentLanguage].spch4;
+
   const container_final = document.querySelector(".screen_last");
   const navbar6 = container_final.querySelector(".navbar");
   navbar6.querySelector(".frst").textContent =
