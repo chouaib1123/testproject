@@ -680,7 +680,7 @@ const foundersTranslations = {
     spch2: "الرئيس التنفيذي",
     spch3: "مدير التكنولوجيا",
     spch4: "كبير مسؤولي التسويق",
-    speech: "تعرف على مؤسسين FG Affiliate",
+    speech: "تعرف على مؤسسي الشركة",
   },
   en: {
     title: "Founders",
@@ -724,21 +724,21 @@ function switchLanguage() {
     foundersTranslations[currentLanguage].title;
   container_founders.querySelector(".speech").textContent =
     foundersTranslations[currentLanguage].speech;
-  container_founders.querySelector(".tit:nth-child(1)").textContent =
+  container_founders.querySelector(".tit1").textContent =
     foundersTranslations[currentLanguage].tit1;
-  container_founders.querySelector(".spch:nth-child(1)").textContent =
+  container_founders.querySelector(".spch1").textContent =
     foundersTranslations[currentLanguage].spch1;
-  container_founders.querySelector(".tit:nth-child(2)").textContent =
+  container_founders.querySelector(".tit2").textContent =
     foundersTranslations[currentLanguage].tit2;
-  container_founders.querySelector(".spch:nth-child(2)").textContent =
+  container_founders.querySelector(".spch2").textContent =
     foundersTranslations[currentLanguage].spch2;
-  container_founders.querySelector(".tit:nth-child(3)").textContent =
+  container_founders.querySelector(".tit3").textContent =
     foundersTranslations[currentLanguage].tit3;
-  container_founders.querySelector(".spch:nth-child(3)").textContent =
+  container_founders.querySelector(".spch3").textContent =
     foundersTranslations[currentLanguage].spch3;
-  container_founders.querySelector(".tit:nth-child(4)").textContent =
+  container_founders.querySelector(".tit4").textContent =
     foundersTranslations[currentLanguage].tit4;
-  container_founders.querySelector(".spch:nth-child(4)").textContent =
+  container_founders.querySelector(".spch4").textContent =
     foundersTranslations[currentLanguage].spch4;
 
   const container_final = document.querySelector(".screen_last");
